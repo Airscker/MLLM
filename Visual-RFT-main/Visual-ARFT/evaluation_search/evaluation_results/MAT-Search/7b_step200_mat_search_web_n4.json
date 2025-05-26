@@ -1,0 +1,752 @@
+[
+    {
+        "pred_answer": "Play well",
+        "gt": "Play well.",
+        "query": "What is the original meaning of the brand name in the language of the country the brand is located?"
+    },
+    {
+        "pred_answer": "United States",
+        "gt": "United States",
+        "query": "The currency in the picture is the official currency of which country?"
+    },
+    {
+        "pred_answer": "Chengdu",
+        "gt": "Chengdu",
+        "query": "What is the capital of the province where the dish in the picture originated?"
+    },
+    {
+        "pred_answer": "Babylon",
+        "gt": "China",
+        "query": "Which ancient civilization in the East originated the calculating tool in the picture?"
+    },
+    {
+        "pred_answer": "29",
+        "gt": "29",
+        "query": "What is the atomic number of the chemical element in the picture?"
+    },
+    {
+        "pred_answer": "Pupil",
+        "gt": "Pupil",
+        "query": "What is the black circular opening in the center of the structure in the picture called?"
+    },
+    {
+        "pred_answer": "Cetaceans; Fin whale",
+        "gt": "Fin whale",
+        "query": "What is the mammalian group to which the animal in the picture belongs, and what is its second largest extant species?"
+    },
+    {
+        "pred_answer": "Moby-Dick",
+        "gt": "Moby-Dick",
+        "query": "From which English novel does this brand name originate?"
+    },
+    {
+        "pred_answer": "Wind",
+        "gt": "Wind energy",
+        "query": "Which natural energy source is primarily converted to electricity by the device in the picture?"
+    },
+    {
+        "pred_answer": "Pixar",
+        "gt": "Pixar",
+        "query": "What is another animation company founded by the founder of this company"
+    },
+    {
+        "pred_answer": "Statue of Liberty",
+        "gt": "Statue of Liberty",
+        "query": "The designer of the structure in the image also designed the internal structure of which famous American statue?"
+    },
+    {
+        "pred_answer": "0 °C",
+        "gt": "0 degrees Celsius",
+        "query": "What is the temperature point (at standard atmospheric pressure) at which the morphological transformation of the substance in the picture occurs?"
+    },
+    {
+        "pred_answer": "Arctic",
+        "gt": "Arctic",
+        "query": "What is the name of the region where the animal in the image primarily inhabits?"
+    },
+    {
+        "pred_answer": "Emu",
+        "gt": "Emu",
+        "query": "This animal appears on coat of arms of its nation. What is the other animal in it?"
+    },
+    {
+        "pred_answer": "Family Computer (Famicom)",
+        "gt": "Color TV-Game",
+        "query": "What was the first video game console released by the company that made the device in the image?"
+    },
+    {
+        "pred_answer": "Violin family",
+        "gt": "String instrument",
+        "query": "The instruments played by the musicians in the picture belong to which family of instruments?"
+    },
+    {
+        "pred_answer": "Taurus",
+        "gt": "Ursa Major",
+        "query": "The asterism shown in the image is part of which larger constellation?"
+    },
+    {
+        "pred_answer": "Mughal Dynasty",
+        "gt": "Mughal emperor",
+        "query": "The builder of this building belonged to which dynasty?"
+    },
+    {
+        "pred_answer": "3",
+        "gt": "3",
+        "query": "How many colors are there in the flag of the country where the region where the drink originated in the picture?"
+    },
+    {
+        "pred_answer": "London, River Thames",
+        "gt": "London, Thames",
+        "query": "In which city is the observation wheel shown in the image located, and what is the name of the river it stands beside?"
+    },
+    {
+        "pred_answer": "Pound sterling",
+        "gt": "Pound sterling",
+        "query": "What is the official currency used in the country of the band in question in the picture?"
+    },
+    {
+        "pred_answer": "Termites and ants",
+        "gt": "Ants or termites",
+        "query": "What type of insect does the animal in the picture mainly feed on?"
+    },
+    {
+        "pred_answer": "Earth",
+        "gt": "Earth",
+        "query": "The object in the picture is a natural satellite of which planet?"
+    },
+    {
+        "pred_answer": "Eucalyptus leaves",
+        "gt": "Eucalyptus leaves",
+        "query": "What kind of leaves does the animal in the image primarily consume?"
+    },
+    {
+        "pred_answer": "Mickey Mouse",
+        "gt": "Mickey Mouse",
+        "query": "Who is the protagonist of the first audio animated short film by the founder of this entertainment company?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the author's country part of the Allied Powers during World War II?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "Yes",
+        "query": "Did the author hold a position at the same university as Isaac Newton once did?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "No",
+        "query": "Was the real Oskar Schindler still alive when this film was released?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the author of this book alive during the collapse of the Austro-Hungarian Empire?"
+    },
+    {
+        "pred_answer": "1946",
+        "gt": "1946",
+        "query": "In what year did the author of this book receive the Nobel Prize in Literature?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Did the author live to see the coronation of any British monarch?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "Yes",
+        "query": "Was the author of this book also a pilot in World War II?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the author of this book also a pilot in World War II?"
+    },
+    {
+        "pred_answer": "1960",
+        "gt": "1960",
+        "query": "In what year did the country of the author's nationality declare independence?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the company that released the original version of this game also responsible for publishing a FIFA title before 2008?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Is the vertical drop in this image greater than the height of the tallest building in North America?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "was it the longest suspension bridge in the world?"
+    },
+    {
+        "pred_answer": "The Empire State Building needs to grow approximately 384.8 meters to reach the height of the world's tallest building, the Burj Khalifa.",
+        "gt": "387",
+        "query": "How many meters would it need to grow to reach the height of the world's tallest building?"
+    },
+    {
+        "pred_answer": "Mount Fuji is approximately 1,865.76 meters shorter than the highest mountain on the European continent, Mount Elbrus.",
+        "gt": "1866",
+        "query": "How many meters shorter is it than the highest mountain on the European continent?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Was this temple rediscovered by the British after Indonesia became a sovereign state?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was Queen Victoria already on the throne when this clock tower was completed?"
+    },
+    {
+        "pred_answer": null,
+        "gt": "Yes",
+        "query": "Had all the presidents depicted on this monument already passed away when the carving of the sculpture began?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Had the Umayyad Caliphate already been established when this building was constructed?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Had the Aztec Empire already fallen when European explorers first encountered these statues?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "No",
+        "query": "Did the Hundred Years' War begin before the construction of this building started?"
+    },
+    {
+        "pred_answer": "University of Pennsylvania",
+        "gt": "Wharton School",
+        "query": "In which university did the CEO of the company in the picture obtain his MBA degree?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the actress who voiced the AI in this game also the singer of its end credits song?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Is the country where the man in the image was born the same as the country where the headquarters of Amnesty International is located?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the company that released this game also behind Overwatch?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Had this game already been released by the time Genshin Impact first launched?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Was the first game in this series released before the PlayStation 4 console?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Did the company that created this game release their first arcade game before 1950?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the game released after the release of the Wii U?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Did the game creator also work on the game Drakengard?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Was the author of the animated movie that was released as a sequel to this game older than 40 when the game was originally released?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the game's creator also involved in directing Death Stranding?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Did the leader representing India in this game pass away in the 20th century in real history?"
+    },
+    {
+        "pred_answer": null,
+        "gt": "Auburn University",
+        "query": "In which university did the CEO of the company in the picture earn his  industrial engineering degree?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "Yes",
+        "query": "Is the birth country of the person in the picture the same as the country where the United Nations headquarters is located?"
+    },
+    {
+        "pred_answer": "Jonathan Dickinson",
+        "gt": "Jonathan Dickinson",
+        "query": "Who was the first president of the university from which the founder of the company in the picture graduated?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Was the person in the picture born in the home country of NATO's first secretary general?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "No",
+        "query": "Was the university from which the author of the book that inspired this game graduated established before the 20th century?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the author who created this fantasy world born in the 19th century?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Did the author who co-created this game's world also write A Song of Ice and Fire?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "Yes",
+        "query": "Was the author of the book series that inspired this game born before World War II ended?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Was the mythological figure who shares a name with this game's protagonist depicted in ancient literature as a child of Zeus?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the historical group that inspired this game active during the Crusades?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Is this painting shown in the same gallery as the Bayeux Tapestry?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Is this painting exhibited in the same location as the Bust of Nefertiti"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Is this painting exhibited in the same location as the Berlin Green Head?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Is this artwork housed in the same location as Guernica by Picasso?"
+    },
+    {
+        "pred_answer": "Henry Dunster",
+        "gt": "Nathaniel Eaton",
+        "query": "Who was the first president of the university where the CEO of the company in the picture studied?"
+    },
+    {
+        "pred_answer": null,
+        "gt": "No",
+        "query": "Is the birth country of the person in the picture the same as the country where the World Economic Forum headquarters is located?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "No",
+        "query": "Is the birth country of the person in the picture the same as the country where the World Economic Forum headquarters is located?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Is this sculpture exhibited in the same location as The Third of May 1808"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Is this statue in the same gallery as The Arnolfini Portrait?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Is this artwork stored in the same institution as The Thinker?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Is this painting exhibited in the same building as The Birth of Venus?"
+    },
+    {
+        "pred_answer": "No",
+        "gt": "No",
+        "query": "Is this painting displayed in the same museum as Magna Carta?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Is this sculpture located in the same museum as the Venus de Milo?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Is this painting housed in the same location as The Night Watch?"
+    },
+    {
+        "pred_answer": "The Rosetta Stone was rediscovered approximately 260 years after the death of Ptolemy V.",
+        "gt": "1979",
+        "query": "How many years after the death of Ptolemy V was the stele rediscovered?"
+    },
+    {
+        "pred_answer": "The funerary mask was unearthed about 3248 years after Tutankhamun's death.",
+        "gt": "3248",
+        "query": "How many years after the pharaoh's death was this funerary mask unearthed?"
+    },
+    {
+        "pred_answer": "The Terracotta Army was discovered approximately 2184 years after the death of Qin Shi Huang.",
+        "gt": "2184",
+        "query": "How many years after the death of the emperor was this army discovered?"
+    },
+    {
+        "pred_answer": "Yum! Brands",
+        "gt": "Yum! Brands",
+        "query": "From the picture, which catering group do these two brands belong to?"
+    },
+    {
+        "pred_answer": "Generic map projection",
+        "gt": "a WGS84 geographic projection with an ESPG code of 4326",
+        "query": "What type of projection is typically used in the tool shown in the image?"
+    },
+    {
+        "pred_answer": "Sound energy",
+        "gt": "Sound energy",
+        "query": "The device in the picture is primarily used to convert what energy into electrical signals?"
+    },
+    {
+        "pred_answer": "Natsume Soseki",
+        "gt": "Natsume Sōseki",
+        "query": "Which famous author is printed on the currency of the country where the food originated in the picture?"
+    },
+    {
+        "pred_answer": "Horus",
+        "gt": "Sphinx",
+        "query": "Which mythical creature is represented by the structure in the image?"
+    },
+    {
+        "pred_answer": "Moon",
+        "gt": "Moon",
+        "query": " Which celestial body was located between the Sun and the Earth when the astronomical phenomenon in the picture occurred?"
+    },
+    {
+        "pred_answer": "J.K. Rowling",
+        "gt": "J.K. Rowling",
+        "query": "Who is the author of the books on which the movie shown in the image is based?"
+    },
+    {
+        "pred_answer": "Lion",
+        "gt": "Unicorn  ",
+        "query": "What is the “national animal” of the breed's country of origin?"
+    },
+    {
+        "pred_answer": "Floating Action Button",
+        "gt": "To turn a device on or off",
+        "query": "What is the primary function of the device or control that the symbol in the image typically represents?"
+    },
+    {
+        "pred_answer": "Ornithopter",
+        "gt": "Ornithopter and Helical rotor",
+        "query": "What is the name of a flying machine designed by the artist of the painting in the image?"
+    },
+    {
+        "pred_answer": "France",
+        "gt": "France",
+        "query": "In which country did the school of art to which this painting belongs originate?"
+    },
+    {
+        "pred_answer": "Chlorophyll",
+        "gt": "Chlorophyll",
+        "query": "What is the name of this pigment for the process depicted in the picture?"
+    },
+    {
+        "pred_answer": "Green, White, Red",
+        "gt": "Green, White, Red",
+        "query": "What are the three colors of the national flag of the country where the building in the image is located?"
+    },
+    {
+        "pred_answer": "February",
+        "gt": "February",
+        "query": "In which month does this city's annual carnival usually take place?"
+    },
+    {
+        "pred_answer": "The arrow in the Amazon logo symbolizes customer satisfaction, happiness, and continuous growth.",
+        "gt": "From A to Z",
+        "query": "What does the arrow in the logo of the company shown in the image symbolize?"
+    },
+    {
+        "pred_answer": "18th century",
+        "gt": "18th century",
+        "query": "In what century did this volcano last erupt?"
+    },
+    {
+        "pred_answer": "Peter Benjamin Parker is the origin story of Spider-Man, a superhero with spider-like abilities, initially depicted as a teenage high-school student and an orphan raised by his Aunt May and Uncle Ben in New York City.",
+        "gt": "",
+        "query": "Peter Benjamin Parker"
+    },
+    {
+        "pred_answer": "The object of the board game in the image is to checkmate the opponent's king.",
+        "gt": "King",
+        "query": "The object of the board game in the image is to \"checkmate\" which opposing piece?"
+    },
+    {
+        "pred_answer": "The primary purpose of the giraffe's long neck is to reach high foliage for food.",
+        "gt": "To reach high branches",
+        "query": "What is the primary purpose of the animal’s long neck?"
+    },
+    {
+        "pred_answer": "Japan",
+        "gt": "Japan",
+        "query": "The products in the picture represent brands that originated in which country?"
+    },
+    {
+        "pred_answer": "Grapes",
+        "gt": "Grapes",
+        "query": "What is the main fruit fermented and brewed into the drink in the picture?"
+    },
+    {
+        "pred_answer": "The primary function of the Shift key is to type capital letters and other alternate \"upper\" characters.",
+        "gt": "To type capital letters",
+        "query": "What is the primary function of the key in the image?"
+    },
+    {
+        "pred_answer": "Bern",
+        "gt": "Bern",
+        "query": "What is the capital city of the country from which the item in the picture originated?"
+    },
+    {
+        "pred_answer": "Southern Hemisphere",
+        "gt": "Southern Hemisphere",
+        "query": "In which hemisphere is the continent where this animal is located?"
+    },
+    {
+        "pred_answer": "Each team has 11 field players on the field in a standard soccer game.",
+        "gt": "11-18",
+        "query": "In a standard game of the sport shown in the picture, how many field players are on each team?"
+    },
+    {
+        "pred_answer": "The Latin scientific name of the maple leaf is Acer rubrum, and the genus name is Acer.",
+        "gt": "Acer",
+        "query": "What is the Latin scientific name and genus name of the species in the flag"
+    },
+    {
+        "pred_answer": "Genetic information",
+        "gt": "Genetic information",
+        "query": "What information about the organism does the molecular structure in the picture primarily carry?"
+    },
+    {
+        "pred_answer": "Glucose and fructose",
+        "gt": "Fructose and Glucose",
+        "query": "What type of sugar is the main component of the sweet substance produced by the insect in the picture?"
+    },
+    {
+        "pred_answer": "Arabic",
+        "gt": "Arabic",
+        "query": "What is the official language of the country where the complex in the picture is located?"
+    },
+    {
+        "pred_answer": "The Olympic Games usually take place every four years.",
+        "gt": "4",
+        "query": "How many years does the sports event represented by the logo in the picture usually take place?"
+    },
+    {
+        "pred_answer": "Nepal and China",
+        "gt": "Nepal, China",
+        "query": "Which two countries share its mountaintop?"
+    },
+    {
+        "pred_answer": "Complete metamorphosis",
+        "gt": "Complete metamorphosis",
+        "query": "The insect in the image undergoes what type of developmental process, transforming from a larva (caterpillar)?"
+    },
+    {
+        "pred_answer": "Humanitarian aid",
+        "gt": "Medical aid or Humanitarian aid",
+        "query": "What type of organization or service is the logo in the picture usually associated with?"
+    },
+    {
+        "pred_answer": null,
+        "gt": "88",
+        "query": "How many (standard) keys does the instrument in the picture have?"
+    },
+    {
+        "pred_answer": "Dolphins use echolocation for navigation and finding prey.",
+        "gt": "Echolocation",
+        "query": "The animal in the image is a marine mammal known for using what to navigate and find prey?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the city where this structure is located ever the capital of two different empires?"
+    },
+    {
+        "pred_answer": "The Western Roman Empire collapsed about 406 years after the construction of the Colosseum.",
+        "gt": "396",
+        "query": "How long after the construction of this building did the Western Roman Empire collapse?"
+    },
+    {
+        "pred_answer": "3 centuries",
+        "gt": "3",
+        "query": "How many centuries after the fall of the dynasty that completed the most well-known sections of this wall did the last imperial dynasty of China end?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "No",
+        "query": "At the time this structure was completed, was the philosopher who founded the Academy still alive?"
+    },
+    {
+        "pred_answer": "The First World War began 25 years after the completion of the Eiffel Tower.",
+        "gt": "25",
+        "query": "How many years passed between the completion of this structure and the outbreak of the First World War?"
+    },
+    {
+        "pred_answer": "The Judge",
+        "gt": "Ally McBeal",
+        "query": "What film or TV show earned the actor who played Iron Man in this image his first Golden Globe Award?"
+    },
+    {
+        "pred_answer": "Garden Party",
+        "gt": "Winter's Bone",
+        "query": "What was the first feature film of the actress who played Katniss Everdeen?"
+    },
+    {
+        "pred_answer": null,
+        "gt": "Glasgow",
+        "query": "Which company produced the first full-length film by the same director who made this movie?"
+    },
+    {
+        "pred_answer": "Topcraft",
+        "gt": "Tokyo Movie Shinsha",
+        "query": "Which company produced the first full-length film by the same director who made this movie?"
+    },
+    {
+        "pred_answer": "Barking Dogs Never Bite",
+        "gt": "Barking Dogs Never Bite",
+        "query": "What was the directorial debut of the director of this film?"
+    },
+    {
+        "pred_answer": "40 years",
+        "gt": "40",
+        "query": "How many years after the director of this movie was born Windows NT 4.0 was released?"
+    },
+    {
+        "pred_answer": "Kate Winslet was 22 years old when the film Titanic was released.",
+        "gt": "15",
+        "query": "How old was the film’s lead actress when the Hubble Space Telescope was launched?"
+    },
+    {
+        "pred_answer": "26",
+        "gt": "26",
+        "query": "How old was the main actor at the center of this poster when Nelson Mandela was released from prison?"
+    },
+    {
+        "pred_answer": "The euro was introduced as an accounting currency in global financial markets 15 years after Mark Zuckerberg's birth.",
+        "gt": "15",
+        "query": "How many years after the birth of the real-life figure portrayed in this film was the euro introduced as an accounting currency in global financial markets?"
+    },
+    {
+        "pred_answer": "J.K. Rowling was 42 years old when the first-generation iPhone was released.",
+        "gt": "42",
+        "query": "How old was the author of the picture novel when the first-generation iPhone was released?"
+    },
+    {
+        "pred_answer": "15 years",
+        "gt": "15",
+        "query": "How many years after the birth of the lead actor in the movie poster did the Berlin Wall fall?"
+    },
+    {
+        "pred_answer": "Rhode Island School of Design",
+        "gt": "Helen Adelia Rowe Metcalf",
+        "query": "Who founded the university from which the CEO of the company in the picture graduated?"
+    },
+    {
+        "pred_answer": "Bowling Green State University",
+        "gt": "Bowling Green State University",
+        "query": "At which university did the CEO of the company in the picture obtain his Master's degree in Computer Science?"
+    },
+    {
+        "pred_answer": "Stanford University",
+        "gt": "Leland Stanford",
+        "query": "Who founded the university from which the CEO of the company in the picture graduated?"
+    },
+    {
+        "pred_answer": "Rev. Fr. Dionysius Vaz SJ",
+        "gt": "Roque Fernandes",
+        "query": "Who was the first president of the university where the CEO of the company in the picture earned his bachelor's degree in Electrical Engineering?"
+    },
+    {
+        "pred_answer": "2018",
+        "gt": "2018",
+        "query": "In what year did the actress who played Eleven in this series become the youngest-ever UNICEF Goodwill Ambassador?"
+    },
+    {
+        "pred_answer": "Juilliard School",
+        "gt": "Juilliard School",
+        "query": "What was the name of the music school where the actor in this image trained?"
+    },
+    {
+        "pred_answer": "2022",
+        "gt": "2022",
+        "query": "In what year did the composer of this film receive the title of Honorary Knight Commander of the Order of the British Empire?"
+    },
+    {
+        "pred_answer": "Bayonne",
+        "gt": "Bayonne",
+        "query": "In which city was the author of the book series on which this show is based born?"
+    },
+    {
+        "pred_answer": "Big Daddy",
+        "gt": "It's Always Sunny in Philadelphia",
+        "query": "For which comedy series did the voice actor of Luigi in this film receive a major television award nomination?"
+    },
+    {
+        "pred_answer": "Anderson, South Carolina",
+        "gt": "South Carolina",
+        "query": "What is the birth city of the actor who portrayed the king in this film?"
+    },
+    {
+        "pred_answer": "Lovesick",
+        "gt": "Downton Abbey",
+        "query": "What was the first television drama for which the voice actress of this character won a major acting award?"
+    },
+    {
+        "pred_answer": "\"Into the Spider-Verse\"",
+        "gt": "Hear My Voice",
+        "query": "For which song did the composer of this film’s score receive an Academy Award nomination for Best Original Song?"
+    },
+    {
+        "pred_answer": "Camelot",
+        "gt": "Camelot",
+        "query": "What is the name of the musical film in which the actor who portrayed the headmaster in this image won a Golden Globe Award for Best Actor - Motion Picture Musical or Comedy?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": "Was the author born during the reign of the Russian Empire?"
+    },
+    {
+        "pred_answer": "Yes",
+        "gt": "Yes",
+        "query": " Is the total area of this desert larger than that of the entire United States? "
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "id": 12,
+        "question": "What is the serving size of the beverage?",
+        "answers": [
+            "1 Can (473ml)"
+        ],
+        "ori_image_path": "rotation180_1_ori.png",
+        "processed_image_path": "rotation180_1_proc.png",
+        "type": [
+            "rotation180"
+        ],
+        "split": "simple"
+    },
+    {
+        "id": 22,
+        "question": "从图中提取: 发票号码, 发票代码",
+        "answers": [
+            "{'发票号码': '16734841', '发票代码': '112001970102'}"
+        ],
+        "ori_image_path": "dark_1_ori.png",
+        "processed_image_path": "dark_1_proc.png",
+        "type": [
+            "dark"
+        ],
+        "split": "simple"
+    },
+    {
+        "id": 63,
+        "question": "What is the title of the movie featured in the image?",
+        "answers": [
+            "Uncommon Valor"
+        ],
+        "ori_image_path": "none_2_ori.png",
+        "processed_image_path": "none_2_proc.png",
+        "type": [
+            "none"
+        ],
+        "split": "simple"
+    },
+    {
+        "id": 71,
+        "question": "从图中提取: 发票号码, 发票代码, 金额",
+        "answers": [
+            "{'发票号码': '00134721', '发票代码': '151002065029', '金额': '#'}"
+        ],
+        "ori_image_path": "rotation90+dark_0_ori.png",
+        "processed_image_path": "rotation90+dark_0_proc.png",
+        "type": [
+            "rotation90",
+            "dark"
+        ],
+        "split": "hard"
+    },
+    {
+        "id": 119,
+        "question": "Recognize the text within the [366, 723, 506, 851] of the image. The coordinates have been normalized ranging from 0 to 1000 by the image width and height. ",
+        "answers": [
+            "SINCE 1994"
+        ],
+        "ori_image_path": "crop_8_ori.png",
+        "processed_image_path": "crop_8_proc.png",
+        "type": [
+            "crop"
+        ],
+        "split": "hard"
+    },
+    {
+        "id": 124,
+        "question": "Recognize the text within the [489, 155, 595, 259] of the image. The coordinates have been normalized ranging from 0 to 1000 by the image width and height. ",
+        "answers": [
+            "Spaghetti\nGOEMON"
+        ],
+        "ori_image_path": "crop_13_ori.png",
+        "processed_image_path": "crop_13_proc.png",
+        "type": [
+            "crop"
+        ],
+        "split": "hard"
+    }
+]

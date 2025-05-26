@@ -1,0 +1,1425 @@
+[
+    {
+        "id": 1,
+        "gt": [
+            "A"
+        ],
+        "pred_answer": "A"
+    },
+    {
+        "id": 2,
+        "gt": [
+            "Decreases"
+        ],
+        "pred_answer": "Decreases"
+    },
+    {
+        "id": 3,
+        "gt": [
+            "March 14th, 2017",
+            "March 14, 2017",
+            "TUE, March 14, 2017",
+            "Tuesday, March 14th, 2017",
+            "Tuesday, March 14, 2017"
+        ],
+        "pred_answer": "March 14, 2017"
+    },
+    {
+        "id": 4,
+        "gt": [
+            "软件工程"
+        ],
+        "pred_answer": "软件工程"
+    },
+    {
+        "id": 5,
+        "gt": [
+            "serif"
+        ],
+        "pred_answer": "The font used in the organization chart is not visible due to the rotation. To determine the font, the image needs to be rotated back to its original orientation."
+    },
+    {
+        "id": 6,
+        "gt": [
+            "University of Wisconsin"
+        ],
+        "pred_answer": "UNIVERSITY OF WISCONSIN"
+    },
+    {
+        "id": 7,
+        "gt": [
+            "0.24"
+        ],
+        "pred_answer": "C"
+    },
+    {
+        "id": 8,
+        "gt": [
+            "emoH"
+        ],
+        "pred_answer": "emoH"
+    },
+    {
+        "id": 9,
+        "gt": [
+            "Tigger"
+        ],
+        "pred_answer": "Tigger"
+    },
+    {
+        "id": 10,
+        "gt": [
+            "{'金额': '贰元整', '发票代码': '165002012277'}"
+        ],
+        "pred_answer": "{\"金额\": \"贰元整\", \"发票代码\": \"165002012277\"}"
+    },
+    {
+        "id": 11,
+        "gt": [
+            "ABCD"
+        ],
+        "pred_answer": "A, B, C"
+    },
+    {
+        "id": 12,
+        "gt": [
+            "1 Can (473ml)"
+        ],
+        "pred_answer": "1 Can (12 fl oz)"
+    },
+    {
+        "id": 13,
+        "gt": [
+            "email"
+        ],
+        "pred_answer": "form"
+    },
+    {
+        "id": 14,
+        "gt": [
+            "decrease"
+        ],
+        "pred_answer": "Decrease"
+    },
+    {
+        "id": 15,
+        "gt": [
+            "aquamarine"
+        ],
+        "pred_answer": "Light blue"
+    },
+    {
+        "id": 16,
+        "gt": [
+            ".co.uk"
+        ],
+        "pred_answer": "Stetou"
+    },
+    {
+        "id": 17,
+        "gt": [
+            "TGR\nVIP\n咨询热线\n5268\n6111\n沁和园\nPARK ELEVEN"
+        ],
+        "pred_answer": "TGR 5268 6111 沁和园 VIP"
+    },
+    {
+        "id": 18,
+        "gt": [
+            "Continuous Learning"
+        ],
+        "pred_answer": "Research Basics"
+    },
+    {
+        "id": 19,
+        "gt": [
+            "form"
+        ],
+        "pred_answer": "letter"
+    },
+    {
+        "id": 20,
+        "gt": [
+            "精准调控气量"
+        ],
+        "pred_answer": "精确控制空气与燃气的比例，让燃烧更充分。"
+    },
+    {
+        "id": 21,
+        "gt": [
+            "4"
+        ],
+        "pred_answer": "4"
+    },
+    {
+        "id": 22,
+        "gt": [
+            "{'发票号码': '16734841', '发票代码': '112001970102'}"
+        ],
+        "pred_answer": "发票号码: 16734841 发票代码: 112001970102"
+    },
+    {
+        "id": 23,
+        "gt": [
+            "Joseph Gordon-Levitt & wirrow"
+        ],
+        "pred_answer": "Joseph Gordon-Levitt & witrow"
+    },
+    {
+        "id": 24,
+        "gt": [
+            "airplane"
+        ],
+        "pred_answer": "chopper"
+    },
+    {
+        "id": 25,
+        "gt": [
+            "under"
+        ],
+        "pred_answer": "Under"
+    },
+    {
+        "id": 26,
+        "gt": [
+            "擅长团队管理工作"
+        ],
+        "pred_answer": "计算机二级，会计资格证，英语六级，熟练办公软件"
+    },
+    {
+        "id": 27,
+        "gt": [
+            "not ordered",
+            "have not ordered anything yet",
+            "haven't ordered anything yet",
+            "unordered",
+            "no orders",
+            "not ordered anything yet",
+            "no order"
+        ],
+        "pred_answer": "No orders found."
+    },
+    {
+        "id": 28,
+        "gt": [
+            "resume"
+        ],
+        "pred_answer": "resume"
+    },
+    {
+        "id": 29,
+        "gt": [
+            "$20,689",
+            "$20689",
+            "$ 20689",
+            "$ 20,689"
+        ],
+        "pred_answer": "$20,689"
+    },
+    {
+        "id": 30,
+        "gt": [
+            "{'发票号码': '06375371', '发票代码': '141002050242', '金额': '拾元整'}"
+        ],
+        "pred_answer": "{\"发票号码\": \"06375371\", \"发票代码\": \"141002050242\", \"金额\": \"拾元整\"}"
+    },
+    {
+        "id": 31,
+        "gt": [
+            "1/2 package (1oz/28g)"
+        ],
+        "pred_answer": "1/2 package (1 oz / 28g)"
+    },
+    {
+        "id": 32,
+        "gt": [
+            "10-20"
+        ],
+        "pred_answer": "4"
+    },
+    {
+        "id": 33,
+        "gt": [
+            "280"
+        ],
+        "pred_answer": "4"
+    },
+    {
+        "id": 34,
+        "gt": [
+            "EVERYBODY HAPPY"
+        ],
+        "pred_answer": "Yellow Library"
+    },
+    {
+        "id": 35,
+        "gt": [
+            "63"
+        ],
+        "pred_answer": "247"
+    },
+    {
+        "id": 36,
+        "gt": [
+            "A Wedding Anthem of Inclusion."
+        ],
+        "pred_answer": "A MEDICINE LITERATURE OF ILLUSION"
+    },
+    {
+        "id": 37,
+        "gt": [
+            "72.7"
+        ],
+        "pred_answer": "72.7%"
+    },
+    {
+        "id": 38,
+        "gt": [
+            "B"
+        ],
+        "pred_answer": "B"
+    },
+    {
+        "id": 39,
+        "gt": [
+            "182kJ/43kcal"
+        ],
+        "pred_answer": "187 kJ/43 kcal"
+    },
+    {
+        "id": 40,
+        "gt": [
+            "70°"
+        ],
+        "pred_answer": "70°"
+    },
+    {
+        "id": 41,
+        "gt": [
+            "motorcycle"
+        ],
+        "pred_answer": "bicycle"
+    },
+    {
+        "id": 42,
+        "gt": [
+            "8"
+        ],
+        "pred_answer": "8.5"
+    },
+    {
+        "id": 43,
+        "gt": [
+            "对"
+        ],
+        "pred_answer": "错"
+    },
+    {
+        "id": 44,
+        "gt": [
+            "Running Brave"
+        ],
+        "pred_answer": "The Movie"
+    },
+    {
+        "id": 45,
+        "gt": [
+            "3"
+        ],
+        "pred_answer": "3"
+    },
+    {
+        "id": 46,
+        "gt": [
+            "the shopping mall"
+        ],
+        "pred_answer": "the fire department"
+    },
+    {
+        "id": 47,
+        "gt": [
+            "[ K r ]"
+        ],
+        "pred_answer": "path_to_output_image.jpg"
+    },
+    {
+        "id": 48,
+        "gt": [
+            "presentation"
+        ],
+        "pred_answer": "news article"
+    },
+    {
+        "id": 49,
+        "gt": [
+            "75cl"
+        ],
+        "pred_answer": "400 ml"
+    },
+    {
+        "id": 50,
+        "gt": [
+            "WWW.TOPSTOCKRESEARCH.COM"
+        ],
+        "pred_answer": "Top6BlockResearch.com"
+    },
+    {
+        "id": 51,
+        "gt": [
+            "The Red Tent and Day After Night"
+        ],
+        "pred_answer": "The Red Tent and Day After Night"
+    },
+    {
+        "id": 52,
+        "gt": [
+            "Coypos!\nPark & Ride\nPR2\n33662\nSNI2 AED"
+        ],
+        "pred_answer": "Caspian Park & Ride Fld"
+    },
+    {
+        "id": 53,
+        "gt": [
+            "break"
+        ],
+        "pred_answer": "BAZAX"
+    },
+    {
+        "id": 54,
+        "gt": [
+            "Spider-Man: Into the Spider-Verse"
+        ],
+        "pred_answer": "Spider-Man: Into the Spider-Verse"
+    },
+    {
+        "id": 55,
+        "gt": [
+            "Speedd"
+        ],
+        "pred_answer": "speed"
+    },
+    {
+        "id": 56,
+        "gt": [
+            "7,936",
+            "7936"
+        ],
+        "pred_answer": "7926"
+    },
+    {
+        "id": 57,
+        "gt": [
+            "1 scoop (9g)"
+        ],
+        "pred_answer": "1 scoop (9g)"
+    },
+    {
+        "id": 58,
+        "gt": [
+            "butterfly"
+        ],
+        "pred_answer": "butterfly"
+    },
+    {
+        "id": 59,
+        "gt": [
+            "sotto"
+        ],
+        "pred_answer": "Sotto"
+    },
+    {
+        "id": 60,
+        "gt": [
+            "{'入口': '甘肃临夏站', '金额': '53.00', '出口': '甘肃西固站'}"
+        ],
+        "pred_answer": "入口: 甘肃临夏站, 出口: 甘肃西固站, 金额: 5元"
+    },
+    {
+        "id": 61,
+        "gt": [
+            "recycle bin"
+        ],
+        "pred_answer": "A recycle bin"
+    },
+    {
+        "id": 62,
+        "gt": [
+            "J"
+        ],
+        "pred_answer": "B"
+    },
+    {
+        "id": 63,
+        "gt": [
+            "Uncommon Valor"
+        ],
+        "pred_answer": "Uncommon Valor"
+    },
+    {
+        "id": 64,
+        "gt": [
+            "{'发票号码': '02999481'}"
+        ],
+        "pred_answer": "02999481"
+    },
+    {
+        "id": 65,
+        "gt": [
+            "shiner"
+        ],
+        "pred_answer": "Shiner Beer"
+    },
+    {
+        "id": 66,
+        "gt": [
+            "51",
+            "51.0%",
+            "51%"
+        ],
+        "pred_answer": "51 (51.0%)"
+    },
+    {
+        "id": 67,
+        "gt": [
+            "STONE CREEK COFFEE"
+        ],
+        "pred_answer": "Stone Creek Coffee"
+    },
+    {
+        "id": 68,
+        "gt": [
+            "{'金额': '伍拾元整', '发票代码': '152001804621'}"
+        ],
+        "pred_answer": "金额: 伍拾元整，发票代码：152001804621"
+    },
+    {
+        "id": 69,
+        "gt": [
+            "\\rm{RCl(Br)+NaI\\xrightarrow{丙酮溶液}RI+NaCl(Br)}"
+        ],
+        "pred_answer": "RCl(Br) + NaI \\rightarrow RI + NaCl(Br)"
+    },
+    {
+        "id": 70,
+        "gt": [
+            "{'Date/ Time:': ['10/30/98 1:46 PM']}"
+        ],
+        "pred_answer": "RCl(Br) + NaI \\rightarrow RI + NaCl(Br)"
+    },
+    {
+        "id": 71,
+        "gt": [
+            "{'发票号码': '00134721', '发票代码': '151002065029', '金额': '#'}"
+        ],
+        "pred_answer": "发票号码: 00134721, 发票代码: 151002065029, 金额大写: 元"
+    },
+    {
+        "id": 72,
+        "gt": [
+            "tundra wolf"
+        ],
+        "pred_answer": "Tundra Wolf"
+    },
+    {
+        "id": 73,
+        "gt": [
+            "Power Supply"
+        ],
+        "pred_answer": "Power Supply"
+    },
+    {
+        "id": 74,
+        "gt": [
+            "哆爱\niD\n网咖"
+        ],
+        "pred_answer": "贡献网咖啡"
+    },
+    {
+        "id": 75,
+        "gt": [
+            "POPULAR OFFERS"
+        ],
+        "pred_answer": "Offers"
+    },
+    {
+        "id": 76,
+        "gt": [
+            "ten",
+            "10 out of 10",
+            "10"
+        ],
+        "pred_answer": "10/15"
+    },
+    {
+        "id": 77,
+        "gt": [
+            "n=t|m-T|^{-2}pq"
+        ],
+        "pred_answer": "math"
+    },
+    {
+        "id": 78,
+        "gt": [
+            "A"
+        ],
+        "pred_answer": "B"
+    },
+    {
+        "id": 79,
+        "gt": [
+            "UTURN"
+        ],
+        "pred_answer": "Rotation90"
+    },
+    {
+        "id": 80,
+        "gt": [
+            "D"
+        ],
+        "pred_answer": "C"
+    },
+    {
+        "id": 81,
+        "gt": [
+            "B"
+        ],
+        "pred_answer": "A."
+    },
+    {
+        "id": 82,
+        "gt": [
+            "F"
+        ],
+        "pred_answer": "B"
+    },
+    {
+        "id": 83,
+        "gt": [
+            "D"
+        ],
+        "pred_answer": "B"
+    },
+    {
+        "id": 84,
+        "gt": [
+            "fitting"
+        ],
+        "pred_answer": "Fitting"
+    },
+    {
+        "id": 85,
+        "gt": [
+            "Awesome"
+        ],
+        "pred_answer": "Awesome"
+    },
+    {
+        "id": 86,
+        "gt": [
+            "3641"
+        ],
+        "pred_answer": "456789"
+    },
+    {
+        "id": 87,
+        "gt": [
+            "the \"Subscribe\" option",
+            "Subscribe",
+            "\"Subscribe\" option"
+        ],
+        "pred_answer": "Your Lists"
+    },
+    {
+        "id": 88,
+        "gt": [
+            "{'日期': '2021-04-13', '金额': '79.00元'}"
+        ],
+        "pred_answer": "{\"日期\": \"2023年07月\", \"金额\": \"100\"}"
+    },
+    {
+        "id": 89,
+        "gt": [
+            "2",
+            "two",
+            "twice"
+        ],
+        "pred_answer": "2"
+    },
+    {
+        "id": 90,
+        "gt": [
+            "cstuk"
+        ],
+        "pred_answer": "stuck"
+    },
+    {
+        "id": 91,
+        "gt": [
+            "BD"
+        ],
+        "pred_answer": "B"
+    },
+    {
+        "id": 92,
+        "gt": [
+            "Z n + C u S O _ { 4 } = Z n S O _ { 4 } + C u"
+        ],
+        "pred_answer": "No image was provided for processing."
+    },
+    {
+        "id": 93,
+        "gt": [
+            "ovate"
+        ],
+        "pred_answer": "serrated"
+    },
+    {
+        "id": 94,
+        "gt": [
+            "A"
+        ],
+        "pred_answer": "C"
+    },
+    {
+        "id": 95,
+        "gt": [
+            "{'受理日期': '2019年05月31日'}"
+        ],
+        "pred_answer": "{\"受理日期\": \"2019年06月21日\"}"
+    },
+    {
+        "id": 96,
+        "gt": [
+            "Trimegestone - Publication and Abstract Tracking Report"
+        ],
+        "pred_answer": "Timmestone - Philanthropy and Abstract Teaching Report"
+    },
+    {
+        "id": 97,
+        "gt": [
+            "{'发票代码': '143001913127', '发票号码': '68979846', '金额': '伍元'}"
+        ],
+        "pred_answer": "{\"发票代码\": \"143001913127\", \"发票号码\": \"68979846\", \"金额\": \"伍元\"}"
+    },
+    {
+        "id": 98,
+        "gt": [
+            "lightblue"
+        ],
+        "pred_answer": "Blue"
+    },
+    {
+        "id": 99,
+        "gt": [
+            "advertisement"
+        ],
+        "pred_answer": "advertisement"
+    },
+    {
+        "id": 100,
+        "gt": [
+            "Gray"
+        ],
+        "pred_answer": "No Office"
+    },
+    {
+        "id": 101,
+        "gt": [
+            "joystick"
+        ],
+        "pred_answer": "gamepad"
+    },
+    {
+        "id": 102,
+        "gt": [
+            "The Ranch"
+        ],
+        "pred_answer": "The Ranch"
+    },
+    {
+        "id": 103,
+        "gt": [
+            "Fish and Dragonfly nymph"
+        ],
+        "pred_answer": "Water Plant"
+    },
+    {
+        "id": 104,
+        "gt": [
+            "organization chart"
+        ],
+        "pred_answer": "Organization Chart"
+    },
+    {
+        "id": 105,
+        "gt": [
+            "face"
+        ],
+        "pred_answer": "face"
+    },
+    {
+        "id": 106,
+        "gt": [
+            "footwear"
+        ],
+        "pred_answer": "bikini"
+    },
+    {
+        "id": 107,
+        "gt": [
+            "presentation"
+        ],
+        "pred_answer": "scientific report"
+    },
+    {
+        "id": 108,
+        "gt": [
+            "<no answer>"
+        ],
+        "pred_answer": "Mar 19, 2017"
+    },
+    {
+        "id": 109,
+        "gt": [
+            "\\frac { 0 . 8 } { 4 } = \\frac { x } { 2 6 }"
+        ],
+        "pred_answer": "LaTeX"
+    },
+    {
+        "id": 110,
+        "gt": [
+            "0 . 0 3 6 \\times 5 0 = 1 . 8 ( m ^ { 3 } )"
+        ],
+        "pred_answer": "LaTeX"
+    },
+    {
+        "id": 111,
+        "gt": [
+            "折旧及摊销"
+        ],
+        "pred_answer": "LaTeX"
+    },
+    {
+        "id": 112,
+        "gt": [
+            "Animal quarantine certificate"
+        ],
+        "pred_answer": "Animal quarantine qualification certificate (Product B)"
+    },
+    {
+        "id": 113,
+        "gt": [
+            "Nutrition Facts Table"
+        ],
+        "pred_answer": "Nutritional composition table"
+    },
+    {
+        "id": 114,
+        "gt": [
+            "报道捏造的信息来误导公众"
+        ],
+        "pred_answer": "Reported made-up information intended to confuse the public"
+    },
+    {
+        "id": 115,
+        "gt": [
+            "total"
+        ],
+        "pred_answer": "2013-03"
+    },
+    {
+        "id": 116,
+        "gt": [
+            "合并账目附表"
+        ],
+        "pred_answer": "Schedules to the Consolidated Accounts"
+    },
+    {
+        "id": 117,
+        "gt": [
+            "fax"
+        ],
+        "pred_answer": "传真"
+    },
+    {
+        "id": 118,
+        "gt": [
+            "poached beef"
+        ],
+        "pred_answer": "The price list has been successfully translated into English."
+    },
+    {
+        "id": 119,
+        "gt": [
+            "SINCE 1994"
+        ],
+        "pred_answer": "Phil's MARKET"
+    },
+    {
+        "id": 120,
+        "gt": [
+            "toll"
+        ],
+        "pred_answer": "toll fee"
+    },
+    {
+        "id": 121,
+        "gt": [
+            "71% 的人认为保护环境比以往任何时候都重要"
+        ],
+        "pred_answer": "71% agree it's more important than ever to look after the environment"
+    },
+    {
+        "id": 122,
+        "gt": [
+            "周围一片火海！我们该怎么办？"
+        ],
+        "pred_answer": "那么我们该怎么办？"
+    },
+    {
+        "id": 123,
+        "gt": [
+            "Photo by Claire Kemah.Net"
+        ],
+        "pred_answer": "KEMAH Lighthouse District"
+    },
+    {
+        "id": 124,
+        "gt": [
+            "Spaghetti\nGOEMON"
+        ],
+        "pred_answer": "Spaghetti GOEMON"
+    },
+    {
+        "id": 125,
+        "gt": [
+            "purchasing",
+            "procurement"
+        ],
+        "pred_answer": "procurement"
+    },
+    {
+        "id": 126,
+        "gt": [
+            "Key accounting data and financial indicators"
+        ],
+        "pred_answer": "The text within the specified bounding box appears to be a part of a financial report. The text seems to be in Chinese and likely contains financial data or metrics. I need to translate this text into English to understand its meaning better."
+    },
+    {
+        "id": 127,
+        "gt": [
+            "ATTACK\nCAT"
+        ],
+        "pred_answer": "采购"
+    },
+    {
+        "id": 128,
+        "gt": [
+            "education level"
+        ],
+        "pred_answer": "Cultural level"
+    },
+    {
+        "id": 129,
+        "gt": [
+            "该地区风景名胜和历史遗迹的步行、跑步和骑自行车综合指南"
+        ],
+        "pred_answer": "The text within the specified bounding box appears to be in Chinese characters. I need to translate these characters into English for better understanding."
+    },
+    {
+        "id": 130,
+        "gt": [
+            "total weight limit"
+        ],
+        "pred_answer": "5"
+    },
+    {
+        "id": 131,
+        "gt": [
+            "cape"
+        ],
+        "pred_answer": "Model: 134p005"
+    },
+    {
+        "id": 132,
+        "gt": [
+            "Wall Street Gains\nfrom\nMain Street Pain"
+        ],
+        "pred_answer": "JP MORGAN CHASE: PAREN PARENGOS!!! LOS EMBARGOS!!! JP MORGAN CHASE Wall StreetGains from Main Street Pain"
+    },
+    {
+        "id": 133,
+        "gt": [
+            "注：每股金额的季度计算和年初至今的计算是独立进行的。因此，各季度的每股金额之和可能不等于全年的每股金额。"
+        ],
+        "pred_answer": "The text within the specified bounding box says \"步行、跑步和骑自行车的全面指南，包括场景和历史地标。\" which translates to \"A Comprehensive Guide to Walking, Running, and Bicycling the Area's Scene and Historic Locales.\""
+    },
+    {
+        "id": 134,
+        "gt": [
+            "SOCO\\nHigh Rollers:"
+        ],
+        "pred_answer": "High Rollers:"
+    },
+    {
+        "id": 135,
+        "gt": [
+            "只有 51% 的人正确地知道苹果在冰箱里保存的时间更长。"
+        ],
+        "pred_answer": "只有51%的人知道，苹果在冰箱里储存的时间比在室温下长。"
+    },
+    {
+        "id": 136,
+        "gt": [
+            "咨询费"
+        ],
+        "pred_answer": "只有51%的人知道，苹果在冰箱里储存的时间比在室温下长。"
+    },
+    {
+        "id": 137,
+        "gt": [
+            "Test Engineer"
+        ],
+        "pred_answer": "Human Resources"
+    },
+    {
+        "id": 138,
+        "gt": [
+            "一场与华尔街烟草分析师的圆桌讨论"
+        ],
+        "pred_answer": "The Tobacco Merchants Association's 85th Annual Meeting & Luncheon Wednesday - May 10, 2000 WINDOWS ON THE WORLD One World Trade Center 10th Floor New York, New York PROGRAM 9:30 A.M.- 11:45 A.M. Morning Session: Horizon AB Room A Round Table Discussion with Wall Street Tobacco Analysts Also Featuring Noted Commentator: Victor Schwartz, Product Liability Attorney 12:00 P.M. - 2:30 P.M. Luncheon: Ballroom For reservations or information contact Roberta Crosby or Beth Porter at the TMA: Phone: (609) 275-4800 Fax: (609) 275-5379"
+    },
+    {
+        "id": 139,
+        "gt": [
+            "ALIMENTATION\\nGENERALE\\nBESTAURANT"
+        ],
+        "pred_answer": "BOUCHERIE CHARCUTERIE ALIMENTATION GENERALE RESTAURANT"
+    },
+    {
+        "id": 140,
+        "gt": [
+            "但我一生中从来没有感觉这么好！"
+        ],
+        "pred_answer": "But I've never felt better in my life!"
+    },
+    {
+        "id": 141,
+        "gt": [
+            "carbohydrates"
+        ],
+        "pred_answer": "Carbohydrates"
+    },
+    {
+        "id": 142,
+        "gt": [
+            "没有您需要的所有数据"
+        ],
+        "pred_answer": "请提供图像中指定坐标范围内的文本内容，以便进行翻译。"
+    },
+    {
+        "id": 143,
+        "gt": [
+            "TAWAU HILL\\nPARK"
+        ],
+        "pred_answer": "TAMAN BUKIT TAWAU TAWAU HILL PARK"
+    },
+    {
+        "id": 144,
+        "gt": [
+            "Fresh fruits and vegetables are cooked without any added sugar"
+        ],
+        "pred_answer": "Freshly harvested fruit does not require any additional subsidies."
+    },
+    {
+        "id": 145,
+        "gt": [
+            "Nuit Magique\\nDoux Reves"
+        ],
+        "pred_answer": "NOEL enchante JOYEUSES FETES Nuit Magique Doux Reves Meilleurs Voeux"
+    },
+    {
+        "id": 146,
+        "gt": [
+            "JUR TOWN HALL RD\\nAYE"
+        ],
+        "pred_answer": "JUR TOWN HALL RD"
+    },
+    {
+        "id": 147,
+        "gt": [
+            "科学就像人生一样，是一个永无止境的惊奇和发现之旅。因此，让我们敦促学习者迈出第一步。"
+        ],
+        "pred_answer": "Science: A Field Of Wonder"
+    },
+    {
+        "id": 148,
+        "gt": [
+            "警告：请勿握持。"
+        ],
+        "pred_answer": "警告。请勿停留。"
+    },
+    {
+        "id": 149,
+        "gt": [
+            "ROYAL\nSELANGOR"
+        ],
+        "pred_answer": "ROYAL SELANGOR"
+    },
+    {
+        "id": 150,
+        "gt": [
+            "ITALIAN RESTAURANT"
+        ],
+        "pred_answer": "ARLO"
+    },
+    {
+        "id": 151,
+        "gt": [
+            "BATHTIME\nFUN!"
+        ],
+        "pred_answer": "Bath Time Fun!"
+    },
+    {
+        "id": 152,
+        "gt": [
+            "toll organization"
+        ],
+        "pred_answer": "Airport Road Toll Station"
+    },
+    {
+        "id": 153,
+        "gt": [
+            "这篇关于宗教领袖的文章是一个存根。您可以通过扩展它来帮助维基注释"
+        ],
+        "pred_answer": "神经元教我们不要在伤害动物时造成不必要的痛苦。动物不仅会感到身体上的疼痛，还会感到心理上的痛苦。……这是宗教教育的一部分，它教导孩子们尊重动物，不应该剥夺他们享受生活乐趣的权利。不要忘记那个残忍地享受受伤昆虫的痛苦或被骚扰动物焦虑的孩子。如果所有这些都被认为是合理的，那么《圣经》是否会对“工厂养殖”这种将动物视为机器、对它们的自然需求和本能表现出明显缺乏同情心的做法进行谴责？"
+    },
+    {
+        "id": 154,
+        "gt": [
+            "长大以后我意识到老师讨厌他们的工作，因为孩子们都很混蛋"
+        ],
+        "pred_answer": "年轻的我对待老师很刻薄，而年老的我意识到老师们讨厌他们的工作是因为孩子们是混蛋。"
+    },
+    {
+        "id": 155,
+        "gt": [
+            "谢菲尔德乡村管理处"
+        ],
+        "pred_answer": "谷地管理区"
+    },
+    {
+        "id": 156,
+        "gt": [
+            "No limitation on majors"
+        ],
+        "pred_answer": "No major restriction"
+    },
+    {
+        "id": 157,
+        "gt": [
+            "FOOD\\nDIRECTORY"
+        ],
+        "pred_answer": "FOOD DIRECTORY"
+    },
+    {
+        "id": 158,
+        "gt": [
+            "item"
+        ],
+        "pred_answer": "Traffic Time"
+    },
+    {
+        "id": 159,
+        "gt": [
+            "Winter Market: Nov-Apr\\n2nd Saturday 10-12"
+        ],
+        "pred_answer": "Winter Market: Nov-Apr 2nd Saturday 10-12"
+    },
+    {
+        "id": 160,
+        "gt": [
+            "六个自由度的灵活运动"
+        ],
+        "pred_answer": "Flexibility of motion in six degrees of freedom"
+    },
+    {
+        "id": 161,
+        "gt": [
+            "Friseursalon\\nINGRID ZAUNER"
+        ],
+        "pred_answer": "ZHAN.COM"
+    },
+    {
+        "id": 162,
+        "gt": [
+            "The Antidote to Successology"
+        ],
+        "pred_answer": "The text says \"success education's remedy\" in English."
+    },
+    {
+        "id": 163,
+        "gt": [
+            "hamburger"
+        ],
+        "pred_answer": "Main dishes: Hot dog - ¥10, Salad - ¥14, Pizza - ¥33; Special menu: Sandwich - ¥18, French fries - ¥76, Chicken - ¥11; Desserts: Banana pie - ¥12, Ice cream - ¥13, Apple pie - ¥14, Chocolate cake - ¥18, Cheese cake - ¥19; Drinks: Orange juice - ¥12, Milk - ¥10, Coffee - ¥17, Hot chocolate - ¥15, Ice tea - ¥19, Water - ¥14."
+    },
+    {
+        "id": 164,
+        "gt": [
+            "传输报告"
+        ],
+        "pred_answer": "096"
+    },
+    {
+        "id": 165,
+        "gt": [
+            "KOKO KRUNCH\nGREAT\nCHOCOLATEY TASTE"
+        ],
+        "pred_answer": "Golden Honey"
+    },
+    {
+        "id": 166,
+        "gt": [
+            "立法者在社交媒体上发布的所有帖子"
+        ],
+        "pred_answer": "All lawmaker posts on social media"
+    },
+    {
+        "id": 167,
+        "gt": [
+            "昆虫和两栖动物出现了。"
+        ],
+        "pred_answer": "昆虫和两栖动物出现了。"
+    },
+    {
+        "id": 168,
+        "gt": [
+            "No bringing your own drinks. Thank you for your cooperation."
+        ],
+        "pred_answer": "No alcohol please. Thank you for your cooperation."
+    },
+    {
+        "id": 169,
+        "gt": [
+            "Do you know who is the best at grilling?"
+        ],
+        "pred_answer": "Who is the best at grilling?"
+    },
+    {
+        "id": 170,
+        "gt": [
+            "The company's stock is subject to other risk warnings"
+        ],
+        "pred_answer": "Who is the best at grilling?"
+    },
+    {
+        "id": 171,
+        "gt": [
+            "教授健康的人际关系"
+        ],
+        "pred_answer": "教育健康关系"
+    },
+    {
+        "id": 172,
+        "gt": [
+            "如果您的酒店目前未营业，计划何时恢复营业？"
+        ],
+        "pred_answer": "当你的酒店目前不营业时，你计划何时恢复运营？"
+    },
+    {
+        "id": 173,
+        "gt": [
+            "I slipped my hand on the bread and gave the dog an elbow"
+        ],
+        "pred_answer": "The bread was slipped and gave a slap to the dog."
+    },
+    {
+        "id": 174,
+        "gt": [
+            "genders"
+        ],
+        "pred_answer": "The bread was slipped and gave a slap to the dog."
+    },
+    {
+        "id": 175,
+        "gt": [
+            "FOR\\nKING\\nAND\\nCOUNTRY"
+        ],
+        "pred_answer": "OAKENSHAW & DISTRICT"
+    },
+    {
+        "id": 176,
+        "gt": [
+            "TRAFFIC\\nFINES DOUBLED\\nIN WORK\\nZONES"
+        ],
+        "pred_answer": "Traffic fines doubled in work zones."
+    },
+    {
+        "id": 177,
+        "gt": [
+            "Attraction and retention of key personnel"
+        ],
+        "pred_answer": "Attraction and retention of key personnel"
+    },
+    {
+        "id": 178,
+        "gt": [
+            "改变未来的交通方式"
+        ],
+        "pred_answer": "变革未来的交通"
+    },
+    {
+        "id": 179,
+        "gt": [
+            "公共卫生组织"
+        ],
+        "pred_answer": "公共卫生组织"
+    },
+    {
+        "id": 180,
+        "gt": [
+            "Macroeconomic fluctuation risk"
+        ],
+        "pred_answer": "公共卫生组织"
+    },
+    {
+        "id": 181,
+        "gt": [
+            "CLASSROOMS\\nGO BEYOND\\nFOUR WALLS"
+        ],
+        "pred_answer": "GO BEYOND YOUR WALLS"
+    },
+    {
+        "id": 182,
+        "gt": [
+            "5 colors available"
+        ],
+        "pred_answer": "Five colors can be selected."
+    },
+    {
+        "id": 183,
+        "gt": [
+            "All signs in this store are in stock and can be customized"
+        ],
+        "pred_answer": "The text within the specified bounding box appears to be in Chinese. I need to translate it into English."
+    },
+    {
+        "id": 184,
+        "gt": [
+            "SCHLOSSER\\nKRONENBERGER\\n1880"
+        ],
+        "pred_answer": "SCHLOSSER KRONENBERGER 1890"
+    },
+    {
+        "id": 185,
+        "gt": [
+            "Emergency Stop\\nPlunger"
+        ],
+        "pred_answer": "CHEESE STICKS"
+    },
+    {
+        "id": 186,
+        "gt": [
+            "established\\n1845"
+        ],
+        "pred_answer": "Monterey Harbor"
+    },
+    {
+        "id": 187,
+        "gt": [
+            "部落社会中的战争"
+        ],
+        "pred_answer": "军事在部落社会中"
+    },
+    {
+        "id": 188,
+        "gt": [
+            "Reducing safety, health and environmental costs"
+        ],
+        "pred_answer": "The English translation of the text inside the rectangle defined by [144, 275, 426, 299] is '降低安全，健康和环境成本'."
+    },
+    {
+        "id": 189,
+        "gt": [
+            "Afternoon tea set"
+        ],
+        "pred_answer": "The text in the specified region appears to be in Chinese. I need to translate it into English."
+    },
+    {
+        "id": 190,
+        "gt": [
+            "越来越多的人（37%）开始整理橱柜和冰箱里的食物。"
+        ],
+        "pred_answer": "我们正在购买更多新鲜农产品，更多长寿命产品，更少预切蔬菜和即食餐。"
+    },
+    {
+        "id": 191,
+        "gt": [
+            "v9590\n25"
+        ],
+        "pred_answer": "PRINCE"
+    },
+    {
+        "id": 192,
+        "gt": [
+            "aero engine"
+        ],
+        "pred_answer": "Aircraft Engine"
+    },
+    {
+        "id": 193,
+        "gt": [
+            "联邦政府"
+        ],
+        "pred_answer": "The federal government"
+    },
+    {
+        "id": 194,
+        "gt": [
+            "appendix"
+        ],
+        "pred_answer": "New Era University Students Political Socialization Questionnaire Survey"
+    },
+    {
+        "id": 195,
+        "gt": [
+            "Cucumber and pineapple juice"
+        ],
+        "pred_answer": "Vintae elegance"
+    },
+    {
+        "id": 196,
+        "gt": [
+            "SIZE\\n3"
+        ],
+        "pred_answer": "SIZE 3"
+    },
+    {
+        "id": 197,
+        "gt": [
+            "Risk Warning"
+        ],
+        "pred_answer": "SIZE 3"
+    },
+    {
+        "id": 198,
+        "gt": [
+            "cat's belly"
+        ],
+        "pred_answer": "I rely on sunlight, cat belly rubs, cheap food, endless fantasies, and inexplicable crying."
+    },
+    {
+        "id": 199,
+        "gt": [
+            "印刷订单、地址和供应申请单"
+        ],
+        "pred_answer": "打印顺序、地址和供应申请"
+    },
+    {
+        "id": 200,
+        "gt": [
+            "job"
+        ],
+        "pred_answer": "Mattéo·Pulati"
+    }
+]

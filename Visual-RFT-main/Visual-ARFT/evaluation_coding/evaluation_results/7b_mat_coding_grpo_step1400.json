@@ -1,0 +1,1425 @@
+[
+    {
+        "id": 1,
+        "gt": [
+            "A"
+        ],
+        "pred_answer": "A"
+    },
+    {
+        "id": 2,
+        "gt": [
+            "Decreases"
+        ],
+        "pred_answer": "Decreases"
+    },
+    {
+        "id": 3,
+        "gt": [
+            "March 14th, 2017",
+            "March 14, 2017",
+            "TUE, March 14, 2017",
+            "Tuesday, March 14th, 2017",
+            "Tuesday, March 14, 2017"
+        ],
+        "pred_answer": "The selected date is March 14, 2017."
+    },
+    {
+        "id": 4,
+        "gt": [
+            "软件工程"
+        ],
+        "pred_answer": "软件工程"
+    },
+    {
+        "id": 5,
+        "gt": [
+            "serif"
+        ],
+        "pred_answer": "The font used in the organization chart is not specified in the image."
+    },
+    {
+        "id": 6,
+        "gt": [
+            "University of Wisconsin"
+        ],
+        "pred_answer": "University of Wisconsin"
+    },
+    {
+        "id": 7,
+        "gt": [
+            "0.24"
+        ],
+        "pred_answer": "A"
+    },
+    {
+        "id": 8,
+        "gt": [
+            "emoH"
+        ],
+        "pred_answer": "emoH"
+    },
+    {
+        "id": 9,
+        "gt": [
+            "Tigger"
+        ],
+        "pred_answer": "Peter Pan"
+    },
+    {
+        "id": 10,
+        "gt": [
+            "{'金额': '贰元整', '发票代码': '165002012277'}"
+        ],
+        "pred_answer": "{\"金额\": \"贰元整\", \"发票代码\": \"165002012277\"}"
+    },
+    {
+        "id": 11,
+        "gt": [
+            "ABCD"
+        ],
+        "pred_answer": "A、B、C"
+    },
+    {
+        "id": 12,
+        "gt": [
+            "1 Can (473ml)"
+        ],
+        "pred_answer": "1 Can (473mL)"
+    },
+    {
+        "id": 13,
+        "gt": [
+            "email"
+        ],
+        "pred_answer": "email"
+    },
+    {
+        "id": 14,
+        "gt": [
+            "decrease"
+        ],
+        "pred_answer": "decrease"
+    },
+    {
+        "id": 15,
+        "gt": [
+            "aquamarine"
+        ],
+        "pred_answer": "Light blue"
+    },
+    {
+        "id": 16,
+        "gt": [
+            ".co.uk"
+        ],
+        "pred_answer": "The image contains the text \"1\"."
+    },
+    {
+        "id": 17,
+        "gt": [
+            "TGR\nVIP\n咨询热线\n5268\n6111\n沁和园\nPARK ELEVEN"
+        ],
+        "pred_answer": "TGR 5268 6111 VIP 沁和园 PARK ELEVEN 咨询热线"
+    },
+    {
+        "id": 18,
+        "gt": [
+            "Continuous Learning"
+        ],
+        "pred_answer": "Research Basics"
+    },
+    {
+        "id": 19,
+        "gt": [
+            "form"
+        ],
+        "pred_answer": "email"
+    },
+    {
+        "id": 20,
+        "gt": [
+            "精准调控气量"
+        ],
+        "pred_answer": "精准调控气量"
+    },
+    {
+        "id": 21,
+        "gt": [
+            "4"
+        ],
+        "pred_answer": "64"
+    },
+    {
+        "id": 22,
+        "gt": [
+            "{'发票号码': '16734841', '发票代码': '112001970102'}"
+        ],
+        "pred_answer": "发票号码: 16734841, 发票代码: 112001970102"
+    },
+    {
+        "id": 23,
+        "gt": [
+            "Joseph Gordon-Levitt & wirrow"
+        ],
+        "pred_answer": "Joseph Gordon-Levitt & wifrow"
+    },
+    {
+        "id": 24,
+        "gt": [
+            "airplane"
+        ],
+        "pred_answer": "airplane"
+    },
+    {
+        "id": 25,
+        "gt": [
+            "under"
+        ],
+        "pred_answer": "Under"
+    },
+    {
+        "id": 26,
+        "gt": [
+            "擅长团队管理工作"
+        ],
+        "pred_answer": "计算机二级、会计资格证、英语六级、熟练办公软件"
+    },
+    {
+        "id": 27,
+        "gt": [
+            "not ordered",
+            "have not ordered anything yet",
+            "haven't ordered anything yet",
+            "unordered",
+            "no orders",
+            "not ordered anything yet",
+            "no order"
+        ],
+        "pred_answer": "No orders have been placed yet."
+    },
+    {
+        "id": 28,
+        "gt": [
+            "resume"
+        ],
+        "pred_answer": "resume"
+    },
+    {
+        "id": 29,
+        "gt": [
+            "$20,689",
+            "$20689",
+            "$ 20689",
+            "$ 20,689"
+        ],
+        "pred_answer": "$20,689"
+    },
+    {
+        "id": 30,
+        "gt": [
+            "{'发票号码': '06375371', '发票代码': '141002050242', '金额': '拾元整'}"
+        ],
+        "pred_answer": "{\"发票号码\": \"06375371\", \"发票代码\": \"141002050242\", \"金额\": \"拾元整\"}"
+    },
+    {
+        "id": 31,
+        "gt": [
+            "1/2 package (1oz/28g)"
+        ],
+        "pred_answer": "1/2 package (1 oz / 28g)"
+    },
+    {
+        "id": 32,
+        "gt": [
+            "10-20"
+        ],
+        "pred_answer": "The image does not provide information about the number of bags carried by porters."
+    },
+    {
+        "id": 33,
+        "gt": [
+            "280"
+        ],
+        "pred_answer": "47"
+    },
+    {
+        "id": 34,
+        "gt": [
+            "EVERYBODY HAPPY"
+        ],
+        "pred_answer": "EVERYBODY HAPPY"
+    },
+    {
+        "id": 35,
+        "gt": [
+            "63"
+        ],
+        "pred_answer": "26"
+    },
+    {
+        "id": 36,
+        "gt": [
+            "A Wedding Anthem of Inclusion."
+        ],
+        "pred_answer": "A WEDDING ANTHEM OF INCLUSION"
+    },
+    {
+        "id": 37,
+        "gt": [
+            "72.7"
+        ],
+        "pred_answer": "72.7%"
+    },
+    {
+        "id": 38,
+        "gt": [
+            "B"
+        ],
+        "pred_answer": "B"
+    },
+    {
+        "id": 39,
+        "gt": [
+            "182kJ/43kcal"
+        ],
+        "pred_answer": "43 kcal"
+    },
+    {
+        "id": 40,
+        "gt": [
+            "70°"
+        ],
+        "pred_answer": "60°"
+    },
+    {
+        "id": 41,
+        "gt": [
+            "motorcycle"
+        ],
+        "pred_answer": "motorcycle"
+    },
+    {
+        "id": 42,
+        "gt": [
+            "8"
+        ],
+        "pred_answer": "7.5"
+    },
+    {
+        "id": 43,
+        "gt": [
+            "对"
+        ],
+        "pred_answer": "对"
+    },
+    {
+        "id": 44,
+        "gt": [
+            "Running Brave"
+        ],
+        "pred_answer": "Brave"
+    },
+    {
+        "id": 45,
+        "gt": [
+            "3"
+        ],
+        "pred_answer": "3"
+    },
+    {
+        "id": 46,
+        "gt": [
+            "the shopping mall"
+        ],
+        "pred_answer": "the shopping mall"
+    },
+    {
+        "id": 47,
+        "gt": [
+            "[ K r ]"
+        ],
+        "pred_answer": "The image has been processed to reduce overexposure."
+    },
+    {
+        "id": 48,
+        "gt": [
+            "presentation"
+        ],
+        "pred_answer": "news article"
+    },
+    {
+        "id": 49,
+        "gt": [
+            "75cl"
+        ],
+        "pred_answer": "75cl"
+    },
+    {
+        "id": 50,
+        "gt": [
+            "WWW.TOPSTOCKRESEARCH.COM"
+        ],
+        "pred_answer": "www.i.optimization.org.com"
+    },
+    {
+        "id": 51,
+        "gt": [
+            "The Red Tent and Day After Night"
+        ],
+        "pred_answer": "The Red Tent and Day After Night"
+    },
+    {
+        "id": 52,
+        "gt": [
+            "Coypos!\nPark & Ride\nPR2\n33662\nSNI2 AED"
+        ],
+        "pred_answer": "[Daspont, East, End]"
+    },
+    {
+        "id": 53,
+        "gt": [
+            "break"
+        ],
+        "pred_answer": "The text in the image is \"Hello World!\" after the overexposure reduction."
+    },
+    {
+        "id": 54,
+        "gt": [
+            "Spider-Man: Into the Spider-Verse"
+        ],
+        "pred_answer": "Spider-Man: Into the Spider-Verse"
+    },
+    {
+        "id": 55,
+        "gt": [
+            "Speedd"
+        ],
+        "pred_answer": "The image shows the word \"STOP\" in red LEDs."
+    },
+    {
+        "id": 56,
+        "gt": [
+            "7,936",
+            "7936"
+        ],
+        "pred_answer": "7936"
+    },
+    {
+        "id": 57,
+        "gt": [
+            "1 scoop (9g)"
+        ],
+        "pred_answer": "1 Scoop (9g)"
+    },
+    {
+        "id": 58,
+        "gt": [
+            "butterfly"
+        ],
+        "pred_answer": "spider"
+    },
+    {
+        "id": 59,
+        "gt": [
+            "sotto"
+        ],
+        "pred_answer": "Sotto"
+    },
+    {
+        "id": 60,
+        "gt": [
+            "{'入口': '甘肃临夏站', '金额': '53.00', '出口': '甘肃西固站'}"
+        ],
+        "pred_answer": "入口: 甘肃临夏站, 金额: 伍拾叁元整, 出口: 甘肃西固站"
+    },
+    {
+        "id": 61,
+        "gt": [
+            "recycle bin"
+        ],
+        "pred_answer": "\"Recycle bin\""
+    },
+    {
+        "id": 62,
+        "gt": [
+            "J"
+        ],
+        "pred_answer": "H"
+    },
+    {
+        "id": 63,
+        "gt": [
+            "Uncommon Valor"
+        ],
+        "pred_answer": "Uncommon Valor"
+    },
+    {
+        "id": 64,
+        "gt": [
+            "{'发票号码': '02999481'}"
+        ],
+        "pred_answer": "发票号码: 02999481"
+    },
+    {
+        "id": 65,
+        "gt": [
+            "shiner"
+        ],
+        "pred_answer": "Shiner Beer"
+    },
+    {
+        "id": 66,
+        "gt": [
+            "51",
+            "51.0%",
+            "51%"
+        ],
+        "pred_answer": "51 (51.0%)"
+    },
+    {
+        "id": 67,
+        "gt": [
+            "STONE CREEK COFFEE"
+        ],
+        "pred_answer": "STONE CREEK COFFEE"
+    },
+    {
+        "id": 68,
+        "gt": [
+            "{'金额': '伍拾元整', '发票代码': '152001804621'}"
+        ],
+        "pred_answer": "金额: 伍拾元整, 发票代码: 152001804621"
+    },
+    {
+        "id": 69,
+        "gt": [
+            "\\rm{RCl(Br)+NaI\\xrightarrow{丙酮溶液}RI+NaCl(Br)}"
+        ],
+        "pred_answer": "\\text{RCl(Br) + NaI $\\xrightarrow{\\text{丙酮溶液}}$ RI + NaCl(Br)}"
+    },
+    {
+        "id": 70,
+        "gt": [
+            "{'Date/ Time:': ['10/30/98 1:46 PM']}"
+        ],
+        "pred_answer": "{\"Date/ Time:\": \"10/30/98 1:46 PM\"}"
+    },
+    {
+        "id": 71,
+        "gt": [
+            "{'发票号码': '00134721', '发票代码': '151002065029', '金额': '#'}"
+        ],
+        "pred_answer": "发票号码: 00134721, 发票代码: 151002065029, 金额大写:"
+    },
+    {
+        "id": 72,
+        "gt": [
+            "tundra wolf"
+        ],
+        "pred_answer": "Arctic hare"
+    },
+    {
+        "id": 73,
+        "gt": [
+            "Power Supply"
+        ],
+        "pred_answer": "Power Supply"
+    },
+    {
+        "id": 74,
+        "gt": [
+            "哆爱\niD\n网咖"
+        ],
+        "pred_answer": "The text on the signboard is now more visible after the brightness and contrast adjustments."
+    },
+    {
+        "id": 75,
+        "gt": [
+            "POPULAR OFFERS"
+        ],
+        "pred_answer": "Offers tab"
+    },
+    {
+        "id": 76,
+        "gt": [
+            "ten",
+            "10 out of 10",
+            "10"
+        ],
+        "pred_answer": "10/15"
+    },
+    {
+        "id": 77,
+        "gt": [
+            "n=t|m-T|^{-2}pq"
+        ],
+        "pred_answer": "The LaTeX tag for mathematical expressions in images is not directly provided by the image processing task. However, the image now contains a clear mathematical expression that can be interpreted and potentially converted into LaTeX if needed."
+    },
+    {
+        "id": 78,
+        "gt": [
+            "A"
+        ],
+        "pred_answer": "D"
+    },
+    {
+        "id": 79,
+        "gt": [
+            "UTURN"
+        ],
+        "pred_answer": "U-TURN"
+    },
+    {
+        "id": 80,
+        "gt": [
+            "D"
+        ],
+        "pred_answer": "B"
+    },
+    {
+        "id": 81,
+        "gt": [
+            "B"
+        ],
+        "pred_answer": "A"
+    },
+    {
+        "id": 82,
+        "gt": [
+            "F"
+        ],
+        "pred_answer": "G"
+    },
+    {
+        "id": 83,
+        "gt": [
+            "D"
+        ],
+        "pred_answer": "B"
+    },
+    {
+        "id": 84,
+        "gt": [
+            "fitting"
+        ],
+        "pred_answer": "Fitting"
+    },
+    {
+        "id": 85,
+        "gt": [
+            "Awesome"
+        ],
+        "pred_answer": "Awesome 9.0"
+    },
+    {
+        "id": 86,
+        "gt": [
+            "3641"
+        ],
+        "pred_answer": "The CAPTCHA content is \"4763\"."
+    },
+    {
+        "id": 87,
+        "gt": [
+            "the \"Subscribe\" option",
+            "Subscribe",
+            "\"Subscribe\" option"
+        ],
+        "pred_answer": "Subscribe"
+    },
+    {
+        "id": 88,
+        "gt": [
+            "{'日期': '2021-04-13', '金额': '79.00元'}"
+        ],
+        "pred_answer": "{\"日期\": \"2024年06月07日\", \"金额\": \"100元\"}"
+    },
+    {
+        "id": 89,
+        "gt": [
+            "2",
+            "two",
+            "twice"
+        ],
+        "pred_answer": "2"
+    },
+    {
+        "id": 90,
+        "gt": [
+            "cstuk"
+        ],
+        "pred_answer": "cstuk"
+    },
+    {
+        "id": 91,
+        "gt": [
+            "BD"
+        ],
+        "pred_answer": "D"
+    },
+    {
+        "id": 92,
+        "gt": [
+            "Z n + C u S O _ { 4 } = Z n S O _ { 4 } + C u"
+        ],
+        "pred_answer": "The final answer is the rotated image, which is now correctly oriented for viewing and analysis."
+    },
+    {
+        "id": 93,
+        "gt": [
+            "ovate"
+        ],
+        "pred_answer": "longifolia"
+    },
+    {
+        "id": 94,
+        "gt": [
+            "A"
+        ],
+        "pred_answer": "C"
+    },
+    {
+        "id": 95,
+        "gt": [
+            "{'受理日期': '2019年05月31日'}"
+        ],
+        "pred_answer": "{\"受理日期\": \"2019年04月23日\"}"
+    },
+    {
+        "id": 96,
+        "gt": [
+            "Trimegestone - Publication and Abstract Tracking Report"
+        ],
+        "pred_answer": "Trimegestone - Publication and Abstract Tracking Report"
+    },
+    {
+        "id": 97,
+        "gt": [
+            "{'发票代码': '143001913127', '发票号码': '68979846', '金额': '伍元'}"
+        ],
+        "pred_answer": "{\"发票代码\": \"143001913127\", \"发票号码\": \"68979846\", \"金额\": \"伍元\"}"
+    },
+    {
+        "id": 98,
+        "gt": [
+            "lightblue"
+        ],
+        "pred_answer": "The 'Materials Management' node is gray in color."
+    },
+    {
+        "id": 99,
+        "gt": [
+            "advertisement"
+        ],
+        "pred_answer": "advertisement"
+    },
+    {
+        "id": 100,
+        "gt": [
+            "Gray"
+        ],
+        "pred_answer": "No choice"
+    },
+    {
+        "id": 101,
+        "gt": [
+            "joystick"
+        ],
+        "pred_answer": "floor plan of a building or facility"
+    },
+    {
+        "id": 102,
+        "gt": [
+            "The Ranch"
+        ],
+        "pred_answer": "The Ranch"
+    },
+    {
+        "id": 103,
+        "gt": [
+            "Fish and Dragonfly nymph"
+        ],
+        "pred_answer": "Fish and Dragonfly nymph"
+    },
+    {
+        "id": 104,
+        "gt": [
+            "organization chart"
+        ],
+        "pred_answer": "organization chart"
+    },
+    {
+        "id": 105,
+        "gt": [
+            "face"
+        ],
+        "pred_answer": "skeleton"
+    },
+    {
+        "id": 106,
+        "gt": [
+            "footwear"
+        ],
+        "pred_answer": "bra"
+    },
+    {
+        "id": 107,
+        "gt": [
+            "presentation"
+        ],
+        "pred_answer": "scientific report"
+    },
+    {
+        "id": 108,
+        "gt": [
+            "<no answer>"
+        ],
+        "pred_answer": "Vigil held for victims of Detroit home shooting"
+    },
+    {
+        "id": 109,
+        "gt": [
+            "\\frac { 0 . 8 } { 4 } = \\frac { x } { 2 6 }"
+        ],
+        "pred_answer": "The image has been processed to reduce noise."
+    },
+    {
+        "id": 110,
+        "gt": [
+            "0 . 0 3 6 \\times 5 0 = 1 . 8 ( m ^ { 3 } )"
+        ],
+        "pred_answer": "rotation180"
+    },
+    {
+        "id": 111,
+        "gt": [
+            "折旧及摊销"
+        ],
+        "pred_answer": "折旧和摊销"
+    },
+    {
+        "id": 112,
+        "gt": [
+            "Animal quarantine certificate"
+        ],
+        "pred_answer": "Depreciation and amortization"
+    },
+    {
+        "id": 113,
+        "gt": [
+            "Nutrition Facts Table"
+        ],
+        "pred_answer": "Nutritional Information Table"
+    },
+    {
+        "id": 114,
+        "gt": [
+            "报道捏造的信息来误导公众"
+        ],
+        "pred_answer": "Reported make-up information intended to deceive."
+    },
+    {
+        "id": 115,
+        "gt": [
+            "total"
+        ],
+        "pred_answer": "Total Amount"
+    },
+    {
+        "id": 116,
+        "gt": [
+            "合并账目附表"
+        ],
+        "pred_answer": "Schedules to the Consolidated Accounts"
+    },
+    {
+        "id": 117,
+        "gt": [
+            "fax"
+        ],
+        "pred_answer": "Fax"
+    },
+    {
+        "id": 118,
+        "gt": [
+            "poached beef"
+        ],
+        "pred_answer": "Water-boiled Beef"
+    },
+    {
+        "id": 119,
+        "gt": [
+            "SINCE 1994"
+        ],
+        "pred_answer": "Since 1994"
+    },
+    {
+        "id": 120,
+        "gt": [
+            "toll"
+        ],
+        "pred_answer": "Toll Fee"
+    },
+    {
+        "id": 121,
+        "gt": [
+            "71% 的人认为保护环境比以往任何时候都重要"
+        ],
+        "pred_answer": "71% agree it's more important than ever to look after the environment."
+    },
+    {
+        "id": 122,
+        "gt": [
+            "周围一片火海！我们该怎么办？"
+        ],
+        "pred_answer": "火灾四起！我们该怎么办？"
+    },
+    {
+        "id": 123,
+        "gt": [
+            "Photo by Claire Kemah.Net"
+        ],
+        "pred_answer": "Photo by Claire Kemah.Net"
+    },
+    {
+        "id": 124,
+        "gt": [
+            "Spaghetti\nGOEMON"
+        ],
+        "pred_answer": "Spaghetti GOEMON"
+    },
+    {
+        "id": 125,
+        "gt": [
+            "purchasing",
+            "procurement"
+        ],
+        "pred_answer": "Purchase"
+    },
+    {
+        "id": 126,
+        "gt": [
+            "Key accounting data and financial indicators"
+        ],
+        "pred_answer": "Main accounting data and financial indicators"
+    },
+    {
+        "id": 127,
+        "gt": [
+            "ATTACK\nCAT"
+        ],
+        "pred_answer": "ATTACK CAT"
+    },
+    {
+        "id": 128,
+        "gt": [
+            "education level"
+        ],
+        "pred_answer": "Cultural level"
+    },
+    {
+        "id": 129,
+        "gt": [
+            "该地区风景名胜和历史遗迹的步行、跑步和骑自行车综合指南"
+        ],
+        "pred_answer": "A Comprehensive Guide to Walking, Running, and Bicycling the Area's Scenic and Historic Locales"
+    },
+    {
+        "id": 130,
+        "gt": [
+            "total weight limit"
+        ],
+        "pred_answer": "Total weight limit"
+    },
+    {
+        "id": 131,
+        "gt": [
+            "cape"
+        ],
+        "pred_answer": "The text within the region bounded by [343, 128, 491, 188] in the image says \"披风\" in English, which translates to \"raincoat\"."
+    },
+    {
+        "id": 132,
+        "gt": [
+            "Wall Street Gains\nfrom\nMain Street Pain"
+        ],
+        "pred_answer": "Wall Street Gains from Main Street Pain"
+    },
+    {
+        "id": 133,
+        "gt": [
+            "注：每股金额的季度计算和年初至今的计算是独立进行的。因此，各季度的每股金额之和可能不等于全年的每股金额。"
+        ],
+        "pred_answer": "Quarterly and year-to-date computations of per share amounts are made independently. Therefore, the sum of per share amounts for the quarters may not be equal to the per share amount for the year."
+    },
+    {
+        "id": 134,
+        "gt": [
+            "SOCO\\nHigh Rollers:"
+        ],
+        "pred_answer": "SOCO High Rollers:"
+    },
+    {
+        "id": 135,
+        "gt": [
+            "只有 51% 的人正确地知道苹果在冰箱里保存的时间更长。"
+        ],
+        "pred_answer": "只有51%的人知道苹果在冰箱里保存的时间更长。"
+    },
+    {
+        "id": 136,
+        "gt": [
+            "咨询费"
+        ],
+        "pred_answer": "咨询费"
+    },
+    {
+        "id": 137,
+        "gt": [
+            "Test Engineer"
+        ],
+        "pred_answer": "Human resources"
+    },
+    {
+        "id": 138,
+        "gt": [
+            "一场与华尔街烟草分析师的圆桌讨论"
+        ],
+        "pred_answer": "A Round Table Discussion with Wall Street Tobacco Analysts"
+    },
+    {
+        "id": 139,
+        "gt": [
+            "ALIMENTATION\\nGENERALE\\nBESTAURANT"
+        ],
+        "pred_answer": "ALIMENTATION GÉNÉRALE RESTAURANT"
+    },
+    {
+        "id": 140,
+        "gt": [
+            "但我一生中从来没有感觉这么好！"
+        ],
+        "pred_answer": "但是我的生活从来没有感觉这么好过！"
+    },
+    {
+        "id": 141,
+        "gt": [
+            "carbohydrates"
+        ],
+        "pred_answer": "Carbohydrates"
+    },
+    {
+        "id": 142,
+        "gt": [
+            "没有您需要的所有数据"
+        ],
+        "pred_answer": "不要没有你需要的所有数据"
+    },
+    {
+        "id": 143,
+        "gt": [
+            "TAWAU HILL\\nPARK"
+        ],
+        "pred_answer": "TAWAU HILL PARK"
+    },
+    {
+        "id": 144,
+        "gt": [
+            "Fresh fruits and vegetables are cooked without any added sugar"
+        ],
+        "pred_answer": "Fresh vegetables are sold without any additional seasonings."
+    },
+    {
+        "id": 145,
+        "gt": [
+            "Nuit Magique\\nDoux Reves"
+        ],
+        "pred_answer": "Nuit Magique Doux Reves"
+    },
+    {
+        "id": 146,
+        "gt": [
+            "JUR TOWN HALL RD\\nAYE"
+        ],
+        "pred_answer": "JUR TOWN HALL RD AYE"
+    },
+    {
+        "id": 147,
+        "gt": [
+            "科学就像人生一样，是一个永无止境的惊奇和发现之旅。因此，让我们敦促学习者迈出第一步。"
+        ],
+        "pred_answer": "Science, like life is a never-ending journey of wonder and discovery. Let us therefore urge learners to come forward and take the first step."
+    },
+    {
+        "id": 148,
+        "gt": [
+            "警告：请勿握持。"
+        ],
+        "pred_answer": "注意事项：请勿持有。"
+    },
+    {
+        "id": 149,
+        "gt": [
+            "ROYAL\nSELANGOR"
+        ],
+        "pred_answer": "ROYAL SELANGOR"
+    },
+    {
+        "id": 150,
+        "gt": [
+            "ITALIAN RESTAURANT"
+        ],
+        "pred_answer": "ITALIAN RESTAURANT"
+    },
+    {
+        "id": 151,
+        "gt": [
+            "BATHTIME\nFUN!"
+        ],
+        "pred_answer": "BATH TIME FUN!"
+    },
+    {
+        "id": 152,
+        "gt": [
+            "toll organization"
+        ],
+        "pred_answer": "Payment Unit"
+    },
+    {
+        "id": 153,
+        "gt": [
+            "这篇关于宗教领袖的文章是一个存根。您可以通过扩展它来帮助维基注释"
+        ],
+        "pred_answer": "这篇文章关于一位宗教领袖是一个草稿。你可以通过扩展它来帮助Wikiquote。"
+    },
+    {
+        "id": 154,
+        "gt": [
+            "长大以后我意识到老师讨厌他们的工作，因为孩子们都很混蛋"
+        ],
+        "pred_answer": "older me realizing teachers hate their job because kids are assholes"
+    },
+    {
+        "id": 155,
+        "gt": [
+            "谢菲尔德乡村管理处"
+        ],
+        "pred_answer": "谢菲尔德乡村管理"
+    },
+    {
+        "id": 156,
+        "gt": [
+            "No limitation on majors"
+        ],
+        "pred_answer": "No specific major required"
+    },
+    {
+        "id": 157,
+        "gt": [
+            "FOOD\\nDIRECTORY"
+        ],
+        "pred_answer": "FOOD DIRECTORY"
+    },
+    {
+        "id": 158,
+        "gt": [
+            "item"
+        ],
+        "pred_answer": "Project"
+    },
+    {
+        "id": 159,
+        "gt": [
+            "Winter Market: Nov-Apr\\n2nd Saturday 10-12"
+        ],
+        "pred_answer": "Winter Market: Nov-Apr 2nd Saturday 10-12"
+    },
+    {
+        "id": 160,
+        "gt": [
+            "六个自由度的灵活运动"
+        ],
+        "pred_answer": "Flexibility of motion in six degrees of freedom"
+    },
+    {
+        "id": 161,
+        "gt": [
+            "Friseursalon\\nINGRID ZAUNER"
+        ],
+        "pred_answer": "Friseursalon INGRID ZAUNER"
+    },
+    {
+        "id": 162,
+        "gt": [
+            "The Antidote to Successology"
+        ],
+        "pred_answer": "Part Two: The Cure for Success Studies"
+    },
+    {
+        "id": 163,
+        "gt": [
+            "hamburger"
+        ],
+        "pred_answer": "Hamburger"
+    },
+    {
+        "id": 164,
+        "gt": [
+            "传输报告"
+        ],
+        "pred_answer": "传输报告"
+    },
+    {
+        "id": 165,
+        "gt": [
+            "KOKO KRUNCH\nGREAT\nCHOCOLATEY TASTE"
+        ],
+        "pred_answer": "GREAT CHOCOLATEY TASTE"
+    },
+    {
+        "id": 166,
+        "gt": [
+            "立法者在社交媒体上发布的所有帖子"
+        ],
+        "pred_answer": "All lawmaker posts on social media"
+    },
+    {
+        "id": 167,
+        "gt": [
+            "昆虫和两栖动物出现了。"
+        ],
+        "pred_answer": "昆虫和两栖动物出现了。"
+    },
+    {
+        "id": 168,
+        "gt": [
+            "No bringing your own drinks. Thank you for your cooperation."
+        ],
+        "pred_answer": "No alcohol allowed, thank you for your cooperation."
+    },
+    {
+        "id": 169,
+        "gt": [
+            "Do you know who is the best at grilling?"
+        ],
+        "pred_answer": "Who is the best at grilling?"
+    },
+    {
+        "id": 170,
+        "gt": [
+            "The company's stock is subject to other risk warnings"
+        ],
+        "pred_answer": "Company stock other risk alerts implemented"
+    },
+    {
+        "id": 171,
+        "gt": [
+            "教授健康的人际关系"
+        ],
+        "pred_answer": "Teaching Healthy Relationships"
+    },
+    {
+        "id": 172,
+        "gt": [
+            "如果您的酒店目前未营业，计划何时恢复营业？"
+        ],
+        "pred_answer": "如果您的酒店目前未运营，您计划何时恢复运营？"
+    },
+    {
+        "id": 173,
+        "gt": [
+            "I slipped my hand on the bread and gave the dog an elbow"
+        ],
+        "pred_answer": "I just sliced the image to focus on the text area. Now, let's extract the text and translate it."
+    },
+    {
+        "id": 174,
+        "gt": [
+            "genders"
+        ],
+        "pred_answer": "Gender"
+    },
+    {
+        "id": 175,
+        "gt": [
+            "FOR\\nKING\\nAND\\nCOUNTRY"
+        ],
+        "pred_answer": "FOR KING AND COUNTRY"
+    },
+    {
+        "id": 176,
+        "gt": [
+            "TRAFFIC\\nFINES DOUBLED\\nIN WORK\\nZONES"
+        ],
+        "pred_answer": "TRAFFIC FINES DOUBLED IN WORK ZONES"
+    },
+    {
+        "id": 177,
+        "gt": [
+            "Attraction and retention of key personnel"
+        ],
+        "pred_answer": "Attraction and retention of key personnel"
+    },
+    {
+        "id": 178,
+        "gt": [
+            "改变未来的交通方式"
+        ],
+        "pred_answer": "明天的交通转型"
+    },
+    {
+        "id": 179,
+        "gt": [
+            "公共卫生组织"
+        ],
+        "pred_answer": "公共卫生组织"
+    },
+    {
+        "id": 180,
+        "gt": [
+            "Macroeconomic fluctuation risk"
+        ],
+        "pred_answer": "Macroeconomic Fluctuation Risk"
+    },
+    {
+        "id": 181,
+        "gt": [
+            "CLASSROOMS\\nGO BEYOND\\nFOUR WALLS"
+        ],
+        "pred_answer": "CLASSROOMS GO BEYOND FOUR WALLS"
+    },
+    {
+        "id": 182,
+        "gt": [
+            "5 colors available"
+        ],
+        "pred_answer": "5 colors available"
+    },
+    {
+        "id": 183,
+        "gt": [
+            "All signs in this store are in stock and can be customized"
+        ],
+        "pred_answer": "All items in stock, custom content available."
+    },
+    {
+        "id": 184,
+        "gt": [
+            "SCHLOSSER\\nKRONENBERGER\\n1880"
+        ],
+        "pred_answer": "KRONENBERGER"
+    },
+    {
+        "id": 185,
+        "gt": [
+            "Emergency Stop\\nPlunger"
+        ],
+        "pred_answer": "Emergency Stop Plunger"
+    },
+    {
+        "id": 186,
+        "gt": [
+            "established\\n1845"
+        ],
+        "pred_answer": "established 1845"
+    },
+    {
+        "id": 187,
+        "gt": [
+            "部落社会中的战争"
+        ],
+        "pred_answer": "我们现在需要裁剪图像以隔离指定坐标的文本。"
+    },
+    {
+        "id": 188,
+        "gt": [
+            "Reducing safety, health and environmental costs"
+        ],
+        "pred_answer": "Reduce safety, health, and environmental costs"
+    },
+    {
+        "id": 189,
+        "gt": [
+            "Afternoon tea set"
+        ],
+        "pred_answer": "Afternoon Tea Set"
+    },
+    {
+        "id": 190,
+        "gt": [
+            "越来越多的人（37%）开始整理橱柜和冰箱里的食物。"
+        ],
+        "pred_answer": "越来越多的人（37%）在整理我们橱柜和冰箱里的食物。"
+    },
+    {
+        "id": 191,
+        "gt": [
+            "v9590\n25"
+        ],
+        "pred_answer": "V8590 25"
+    },
+    {
+        "id": 192,
+        "gt": [
+            "aero engine"
+        ],
+        "pred_answer": "Aircraft Engine"
+    },
+    {
+        "id": 193,
+        "gt": [
+            "联邦政府"
+        ],
+        "pred_answer": "The federal government"
+    },
+    {
+        "id": 194,
+        "gt": [
+            "appendix"
+        ],
+        "pred_answer": "Appendix"
+    },
+    {
+        "id": 195,
+        "gt": [
+            "Cucumber and pineapple juice"
+        ],
+        "pred_answer": "Small Cucumber Pear Juice"
+    },
+    {
+        "id": 196,
+        "gt": [
+            "SIZE\\n3"
+        ],
+        "pred_answer": "SIZE 3"
+    },
+    {
+        "id": 197,
+        "gt": [
+            "Risk Warning"
+        ],
+        "pred_answer": "Risk Warning"
+    },
+    {
+        "id": 198,
+        "gt": [
+            "cat's belly"
+        ],
+        "pred_answer": "Cat belly skin"
+    },
+    {
+        "id": 199,
+        "gt": [
+            "印刷订单、地址和供应申请单"
+        ],
+        "pred_answer": "打印订单、地址和供应请求"
+    },
+    {
+        "id": 200,
+        "gt": [
+            "job"
+        ],
+        "pred_answer": "Career"
+    }
+]
