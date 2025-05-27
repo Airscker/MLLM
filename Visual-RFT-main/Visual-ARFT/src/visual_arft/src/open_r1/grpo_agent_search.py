@@ -39,7 +39,26 @@ class GRPOScriptArguments(ScriptArguments):
         default=3136,
         metadata={"help": "Minimum number of pixels for the image"},
     )
-    
+    # Pink adaptor arguments
+    adapter_llm_enable: bool = field(default=False, metadata={"help": "Enable LLM adaptors"})
+    adapter_llm_dim: int = field(default=8, metadata={"help": "Hidden dimension for LLM adaptors"})
+    adapter_llm_scale: float = field(default=1.0, metadata={"help": "Scale factor for LLM adaptors"})
+    adapter_llm_dropout: float = field(default=0.05, metadata={"help": "Dropout rate for LLM adaptors"})
+    adapter_vision_enable: bool = field(default=False, metadata={"help": "Enable vision adaptors"})
+    adapter_vision_dim: int = field(default=8, metadata={"help": "Hidden dimension for vision adaptors"})
+    adapter_vision_scale: float = field(default=1.0, metadata={"help": "Scale factor for vision adaptors"})
+    adapter_vision_dropout: float = field(default=0.05, metadata={"help": "Dropout rate for vision adaptors"})
+    adapter_attn: bool = field(default=True, metadata={"help": "Apply adaptors to attention layers"})
+    adapter_mlp: bool = field(default=False, metadata={"help": "Apply adaptors to MLP layers"})
+    adapter_non_linear: bool = field(default=False, metadata={"help": "Use non-linear activation in adaptors"})
+    # clip_select_layer is not directly used in Qwen2VL model loading with adaptors in the same way as PinkModel,
+    # as Qwen2VL handles its vision encoder internally. We include it for completeness if needed later.
+    clip_select_layer: int = field(default=-2, metadata={"help": "CLIP select layer (less relevant for Qwen2VL direct integration)"})
+    # Refinement loop arguments
+    enable_refinement_loop: bool = field(default=False, metadata={"help": "Enable refinement loop with critic."})
+    refinement_threshold_tau: float = field(default=0.5, metadata={"help": "Score threshold for refinement."})
+    max_refinement_loops: int = field(default=3, metadata={"help": "Maximum number of refinement loops."})
+
 def normalize(s):
     def remove_articles(text):
         return re.sub(r"\b(a|an|the)\b", " ", text)
@@ -281,6 +300,22 @@ def main(script_args, training_args, model_args):
         attn_implementation=model_args.attn_implementation,
         max_pixels=script_args.max_pixels,
         min_pixels=script_args.min_pixels,
+        # Pass Pink adaptor arguments
+        adapter_llm_enable=script_args.adapter_llm_enable,
+        adapter_llm_dim=script_args.adapter_llm_dim,
+        adapter_llm_scale=script_args.adapter_llm_scale,
+        adapter_llm_dropout=script_args.adapter_llm_dropout,
+        adapter_vision_enable=script_args.adapter_vision_enable,
+        adapter_vision_dim=script_args.adapter_vision_dim,
+        adapter_vision_scale=script_args.adapter_vision_scale,
+        adapter_vision_dropout=script_args.adapter_vision_dropout,
+        adapter_attn=script_args.adapter_attn,
+        adapter_mlp=script_args.adapter_mlp,
+        adapter_non_linear=script_args.adapter_non_linear,
+        # Pass refinement loop arguments
+        enable_refinement_loop=script_args.enable_refinement_loop,
+        refinement_threshold_tau=script_args.refinement_threshold_tau,
+        max_refinement_loops=script_args.max_refinement_loops,
     )
 
     # Train and push the model to the Hub

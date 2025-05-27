@@ -41,6 +41,9 @@ from transformers import (
 from transformers.integrations.deepspeed import is_deepspeed_zero3_enabled
 from transformers.utils import is_peft_available
 
+# Import Pink adaptors (now from the adapted local version)
+from visual_arft.src.pink.pink_adapted_adapter import adapter, visual_adapter
+
 from trl.data_utils import apply_chat_template, is_conversational, maybe_apply_chat_template
 from trl.models import create_reference_model, prepare_deepspeed, unwrap_model_for_generation
 from trl.trainer.grpo_config import GRPOConfig
@@ -159,6 +162,22 @@ class Qwen2VLGRPOTrainer(Trainer):
         max_pixels: Optional[int] = 12845056,
         min_pixels: Optional[int] = 3136,
         attn_implementation: str = "flash_attention_2",
+        # Pink adaptor arguments
+        adapter_llm_enable: bool = False,
+        adapter_llm_dim: int = 8,
+        adapter_llm_scale: float = 1.0,
+        adapter_llm_dropout: float = 0.05,
+        adapter_vision_enable: bool = False,
+        adapter_vision_dim: int = 8,
+        adapter_vision_scale: float = 1.0,
+        adapter_vision_dropout: float = 0.05,
+        adapter_attn: bool = True,
+        adapter_mlp: bool = False,
+        adapter_non_linear: bool = False,
+        # Refinement loop arguments
+        enable_refinement_loop: bool = False,
+        refinement_threshold_tau: float = 0.5,
+        max_refinement_loops: int = 3,
     ):
         # Args
         if args is None:
@@ -188,9 +207,14 @@ class Qwen2VLGRPOTrainer(Trainer):
                 False if args.gradient_checkpointing else model_init_kwargs.get("use_cache")
             )
             if "Qwen2-VL" in model_id:
-                model = Qwen2VLForConditionalGeneration.from_pretrained(model, **model_init_kwargs)
+                with adapter(hidden_dim=adapter_llm_dim, scale=adapter_llm_scale, dropout=adapter_llm_dropout, enabled=adapter_llm_enable, non_linear=adapter_non_linear, attn=adapter_attn, mlp=adapter_mlp):
+                    with visual_adapter(hidden_dim=adapter_vision_dim, scale=adapter_vision_scale, dropout=adapter_vision_dropout, attn=adapter_attn, mlp=adapter_mlp, enabled=adapter_vision_enable, non_linear=adapter_non_linear):
+                        model = Qwen2VLForConditionalGeneration.from_pretrained(model, **model_init_kwargs)
             elif "Qwen2.5-VL" in model_id:
-                model = Qwen2_5_VLForConditionalGeneration.from_pretrained(model, **model_init_kwargs)
+                # Assuming Qwen2.5-VL might also benefit from similar adaptor structure
+                with adapter(hidden_dim=adapter_llm_dim, scale=adapter_llm_scale, dropout=adapter_llm_dropout, enabled=adapter_llm_enable, non_linear=adapter_non_linear, attn=adapter_attn, mlp=adapter_mlp):
+                    with visual_adapter(hidden_dim=adapter_vision_dim, scale=adapter_vision_scale, dropout=adapter_vision_dropout, attn=adapter_attn, mlp=adapter_mlp, enabled=adapter_vision_enable, non_linear=adapter_non_linear):
+                        model = Qwen2_5_VLForConditionalGeneration.from_pretrained(model, **model_init_kwargs)
             elif "Aria" in model_id:
                 model_init_kwargs.pop("use_cache")
                 model = AriaForConditionalGeneration.from_pretrained(model, **model_init_kwargs)
@@ -210,9 +234,13 @@ class Qwen2VLGRPOTrainer(Trainer):
         # Reference model
         if is_deepspeed_zero3_enabled():
             if "Qwen2-VL" in model_id:
-                self.ref_model = Qwen2VLForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
+                with adapter(hidden_dim=adapter_llm_dim, scale=adapter_llm_scale, dropout=adapter_llm_dropout, enabled=adapter_llm_enable, non_linear=adapter_non_linear, attn=adapter_attn, mlp=adapter_mlp):
+                    with visual_adapter(hidden_dim=adapter_vision_dim, scale=adapter_vision_scale, dropout=adapter_vision_dropout, attn=adapter_attn, mlp=adapter_mlp, enabled=adapter_vision_enable, non_linear=adapter_non_linear):
+                        self.ref_model = Qwen2VLForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
             elif "Qwen2.5-VL" in model_id:
-                self.ref_model = Qwen2_5_VLForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
+                with adapter(hidden_dim=adapter_llm_dim, scale=adapter_llm_scale, dropout=adapter_llm_dropout, enabled=adapter_llm_enable, non_linear=adapter_non_linear, attn=adapter_attn, mlp=adapter_mlp):
+                    with visual_adapter(hidden_dim=adapter_vision_dim, scale=adapter_vision_scale, dropout=adapter_vision_dropout, attn=adapter_attn, mlp=adapter_mlp, enabled=adapter_vision_enable, non_linear=adapter_non_linear):
+                        self.ref_model = Qwen2_5_VLForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
             elif "Aria" in model_id:
                 self.ref_model = AriaForConditionalGeneration.from_pretrained(model_id, **model_init_kwargs)
             else:
@@ -286,6 +314,11 @@ class Qwen2VLGRPOTrainer(Trainer):
             pad_token_id=pad_token_id,
         )
         self.beta = args.beta
+
+        # Store refinement loop parameters
+        self.enable_refinement_loop = enable_refinement_loop
+        self.refinement_threshold_tau = refinement_threshold_tau
+        self.max_refinement_loops = max_refinement_loops
 
         # The trainer estimates the number of FLOPs (floating-point operations) using the number of elements in the
         # input tensor associated with the key "input_ids". However, in GRPO, the sampled data does not include the
@@ -416,41 +449,240 @@ class Qwen2VLGRPOTrainer(Trainer):
         per_token_kl = torch.exp(ref_per_token_logps - per_token_logps) - (ref_per_token_logps - per_token_logps) - 1
 
         # Decode the generated completions
-        completions = self.processing_class.batch_decode(completion_ids, skip_special_tokens=True)
+        decoded_completions_ans0 = self.processing_class.batch_decode(completion_ids, skip_special_tokens=True)
+        
+        # Initialize final completions list, potentially to be refined
+        final_completions_text = list(decoded_completions_ans0) # working with text for refinement simplicity
+
+        if self.enable_refinement_loop:
+            # Ensure unwrapped_model is available, as it's used inside the loop for refinement generation
+            # This re-uses the `unwrapped_model` from the outer scope; nested `with` might not be needed if scope allows.
+            # However, to be explicit and ensure it's the correct model instance:
+            with unwrap_model_for_generation(model, self.accelerator) as unwrapped_model_for_refinement:
+                # The original `prompts_text` and `images` are of size B (batch_size)
+                # `decoded_completions_ans0` is of size B * G (num_generations)
+                # We need to map each completion back to its original prompt and image
+                for i in range(len(decoded_completions_ans0)):
+                    original_prompt_idx = i // self.num_generations
+                    current_question_text = prompts_text[original_prompt_idx] # Original question text
+                    current_image_input = images[original_prompt_idx] # Original image
+                    
+                    ans_text = decoded_completions_ans0[i]
+                    
+                    for loop_idx in range(self.max_refinement_loops):
+                        critique_result = placeholder_critic_evaluate(current_question_text, current_image_input, ans_text)
+                        score = critique_result["score"]
+                        critique = critique_result["critique"]
+
+                        if score < self.refinement_threshold_tau:
+                            # Construct prompt_prime for refinement
+                            # This needs to be formatted according to model's expected conversational style
+                            # We use a simplified template here. `maybe_apply_chat_template` might be needed
+                            # depending on `self.processing_class` and model requirements.
+                            # The SYSTEM_PROMPT_AGENT from grpo_agent_search.py is a reference for full structure.
+                            
+                            # Attempting a structure similar to make_conversation_image
+                            # The 'SYSTEM_PROMPT_AGENT' or a similar base prompt might be needed here.
+                            # For now, directly using the REFINEMENT_PROMPT_TEMPLATE text.
+                            # This part is critical and might need adjustment based on how Qwen2VL processes chat.
+                            
+                            # Simplified refinement prompt text construction
+                            refinement_prompt_text_input = REFINEMENT_PROMPT_TEMPLATE.format(
+                                question_text=current_question_text,
+                                initial_answer=ans_text,
+                                critique=critique
+                            )
+                            
+                            # Prepare input for the model - this is a simplified representation.
+                            # The actual input preparation might need to follow the complex structure
+                            # in `grpo_agent_search.py`'s `make_conversation_image` or `apply_chat_template`.
+                            # Assuming `current_image_input` is a PIL Image.
+                            # The prompt for refinement should be structured as a new user turn.
+                            
+                            # Let's try to mimic the conversational format.
+                            # The `prompts` variable (original conversational prompts) has the structure.
+                            # We need to find the original user prompt text to prepend.
+                            # `inputs[original_prompt_idx]["prompt"]` is the original conversational structure.
+                            
+                            # For Qwen2VL, text input is usually part of a list of content dicts.
+                            # Example: [{"type": "text", "text": "..."}]
+                            # We need to ensure the refinement prompt text is correctly embedded.
+
+                            # Using a simplified text-only refinement prompt for now.
+                            # A more robust solution would re-construct the conversation history
+                            # or use a dedicated refinement template that matches the model's chat format.
+                            
+                            # This processing step is crucial and complex:
+                            # It needs to exactly match how the model expects inputs for multi-turn conversation with images.
+                            # The `self.processing_class` handles image and text together.
+                            # We are creating a new textual turn.
+                            
+                            # Option 1: Simple text prompt (might not leverage conversation history well)
+                            # refinement_input_text = refinement_prompt_text_input
+
+                            # Option 2: Try to format it like a conversational turn.
+                            # This requires knowing the structure `self.processing_class` expects.
+                            # `maybe_apply_chat_template` is usually for a full conversation.
+                            # Here we are adding a new turn.
+                            
+                            # Let's assume the model can take a direct text string as a follow-up,
+                            # given the image is already processed with the initial prompt.
+                            # This is a strong assumption.
+
+                            # A more robust way: Get the original conversation structure
+                            # from `inputs[original_prompt_idx]['prompt']` (which is a list of dicts)
+                            # and append a new user turn with the refinement_prompt_text_input.
+                            # However, `inputs` is a list of dicts, not directly subscriptable like this.
+                            # `prompts` contains the conversational structures.
+                            
+                            # The `prompts_text` was already processed by `maybe_apply_chat_template`.
+                            # We are creating a new turn.
+                            # For now, we make a simplified input for refinement.
+                            # This is a key area for potential improvement.
+                            
+                            current_prompt_structure = prompts[original_prompt_idx] # This is List[Dict]
+                            
+                            # Create a new turn for refinement
+                            # This is a guess on the structure. The actual structure might differ.
+                            # It should be a list of messages if using chat template.
+                            # For Qwen-VL, it's often:
+                            # [{"role": "user", "content": [{"type": "image"}, {"type": "text", "text": "initial_q"}]}]
+                            # For refinement, it would be:
+                            # [{"role": "user", "content": [{"type": "text", "text": "refinement_text"}]}]
+                            # The image is implicitly part of the "session" or needs to be re-passed.
+                            
+                            # We will re-pass the image with the new text.
+                            # The refinement text itself should guide the model.
+
+                            # For Qwen2VL, the processor expects a list of texts and a list of images.
+                            # `current_image_input` is already a PIL.Image.
+                            # `refinement_prompt_text_input` is a string.
+                            refinement_processed_inputs = self.processing_class(
+                                text=[refinement_prompt_text_input], # Must be a list
+                                images=[current_image_input],    # Must be a list
+                                return_tensors="pt",
+                                padding=True, # Apply padding as per model's usual handling
+                                padding_side="left", # Consistent with initial prompt padding
+                                add_special_tokens=False # Assuming False based on initial generation
+                            ).to(self.accelerator.device)
+
+
+                            # Ensure generation config does not return multiple sequences for refinement
+                            refinement_gen_config = copy.deepcopy(self.generation_config)
+                            refinement_gen_config.num_return_sequences = 1 
+                            # Ensure max_new_tokens is appropriate for generating a refined answer
+                            refinement_gen_config.max_new_tokens = self.max_completion_length 
+
+                            refined_completion_ids_full = unwrapped_model_for_refinement.generate(
+                                input_ids=refinement_processed_inputs["input_ids"],
+                                attention_mask=refinement_processed_inputs["attention_mask"],
+                                pixel_values=refinement_processed_inputs["pixel_values"], # Pass pixel_values
+                                image_grid_thw=refinement_processed_inputs["image_grid_thw"], # Pass image_grid_thw
+                                generation_config=refinement_gen_config,
+                            )
+                            
+                            # The refined_completion_ids_full includes the input prompt part. We need to slice it.
+                            refinement_input_len = refinement_processed_inputs["input_ids"].shape[1]
+                            refined_completion_ids_only = refined_completion_ids_full[:, refinement_input_len:]
+
+                            refined_ans_text_list = self.processing_class.batch_decode(refined_completion_ids_only, skip_special_tokens=True)
+                            
+                            if refined_ans_text_list: # Check if list is not empty
+                                ans_text = refined_ans_text_list[0] # Take the first (and only) refined answer
+                                final_completions_text[i] = ans_text # Update the list of completions
+                            else:
+                                # Handle case of empty generation, though unlikely with proper setup
+                                break # Break refinement loop if generation fails
+
+                        else: # Score is good enough
+                            break
+                    # End of refinement loop for one completion
+            # End of loop over all completions
+            
+        # `final_completions_text` now contains original or refined answers.
+        # Convert to conversational format if needed for reward computation
         if is_conversational(inputs[0]):
-            completions = [[{"role": "assistant", "content": completion}] for completion in completions]
+            completions = [[{"role": "assistant", "content": text}] for text in final_completions_text]
+        else:
+            completions = final_completions_text # Should be a list of strings
 
-        # Compute the rewards
-        prompts = [prompt for prompt in prompts for _ in range(self.num_generations)]
+        # Compute the rewards using the potentially refined completions
+        # The `prompts` list is already prepared for B*G elements.
+        # Ensure `completions` also matches this structure.
+        # If `is_conversational` is true, `completions` is List[List[Dict]].
+        # If not, `completions` is List[str].
+        
+        # `final_completions_text` now contains original or refined answers (list of B*G strings)
+        # Convert to conversational format if needed for reward computation
+        if is_conversational(inputs[0]): # `inputs` is the original batch data (list of B items)
+            # `completions_for_reward` should be List[List[Dict]] of size B*G
+            completions_for_reward = [[{"role": "assistant", "content": text}] for text in final_completions_text]
+        else:
+            # `completions_for_reward` should be List[str] of size B*G
+            completions_for_reward = final_completions_text
 
-        rewards_per_func = torch.zeros(len(prompts), len(self.reward_funcs), device=device)
-        for i, (reward_func, reward_processing_class) in enumerate(
+        # Compute the rewards using the potentially refined completions
+        # `prompts` (from the top of compute_loss) is List[Dict] of size B (original prompts with structure)
+        # We need to expand it to match the B*G completions.
+        # `inputs` is a list of dicts from the dataloader, one for each of B items.
+        # `inputs[original_prompt_idx]['prompt']` gives the conversational structure for one original prompt.
+        expanded_prompts_for_reward = [inputs[i // self.num_generations]['prompt'] 
+                                      for i in range(len(completions_for_reward))]
+
+        # Initialize rewards_per_func tensor correctly for B*G items
+        rewards_per_func = torch.zeros(len(completions_for_reward), len(self.reward_funcs), device=device)
+        
+        for i_reward, (reward_func, reward_processing_class) in enumerate(
             zip(self.reward_funcs, self.reward_processing_classes)
         ):
             if isinstance(reward_func, PreTrainedModel):
-                if is_conversational(inputs[0]):
-                    messages = [{"messages": p + c} for p, c in zip(prompts, completions)]
-                    texts = [apply_chat_template(x, reward_processing_class)["text"] for x in messages]
-                else:
-                    texts = [p + c for p, c in zip(prompts, completions)]
+                reward_model_inputs_text = []
+                # `expanded_prompts_for_reward` contains the structured prompt for each of the B*G items
+                # `completions_for_reward` contains the corresponding completion for each of the B*G items
+                if is_conversational(inputs[0]): # Check based on the original dataset format
+                    for original_conv_prompt_structure, assistant_completion_structure in zip(expanded_prompts_for_reward, completions_for_reward):
+                        # original_conv_prompt_structure is like [{"role": "user", ...}]
+                        # assistant_completion_structure is like [{"role": "assistant", ...}]
+                        full_conversation_structure = original_conv_prompt_structure + assistant_completion_structure
+                        # self.processing_class.tokenizer.apply_chat_template or self.processing_class.apply_chat_template
+                        # The exact method depends on the processor type. AutoProcessor might have apply_chat_template directly.
+                        # Using self.processing_class.tokenizer.apply_chat_template as it's common for tokenizers.
+                        if hasattr(self.processing_class, 'apply_chat_template'):
+                            applied_template = self.processing_class.apply_chat_template(full_conversation_structure, tokenize=False, add_generation_prompt=False)
+                        elif hasattr(self.processing_class.tokenizer, 'apply_chat_template'):
+                             applied_template = self.processing_class.tokenizer.apply_chat_template(full_conversation_structure, tokenize=False, add_generation_prompt=False)
+                        else:
+                            raise ValueError("Processor or its tokenizer does not have apply_chat_template method.")
+                        reward_model_inputs_text.append(applied_template)
+                else: 
+                    # If not conversational, `expanded_prompts_for_reward` should be list of text strings
+                    # and `completions_for_reward` also list of text strings.
+                    # This path requires careful handling of `expanded_prompts_for_reward` structure.
+                    # `prompts_text` (B items) vs `expanded_prompts_for_reward` (B*G items from structured prompts).
+                    # For simplicity, if not conversational, we assume `prompts_text` is the source for prompt part.
+                    current_prompts_text_for_reward = [prompts_text[i // self.num_generations] for i in range(len(completions_for_reward))]
+                    reward_model_inputs_text = [p_text + c_text for p_text, c_text in zip(current_prompts_text_for_reward, completions_for_reward)]
+                
                 reward_inputs = reward_processing_class(
-                    texts, return_tensors="pt", padding=True, padding_side="right", add_special_tokens=False
-                )
-                reward_inputs = super()._prepare_inputs(reward_inputs)
+                    reward_model_inputs_text, return_tensors="pt", padding=True, padding_side="right", 
+                    truncation=True, max_length=reward_processing_class.model_max_length, # Add truncation
+                    add_special_tokens=False 
+                ).to(self.accelerator.device)
+                
                 with torch.inference_mode():
-                    rewards_per_func[:, i] = reward_func(**reward_inputs).logits[:, 0]  # Shape (B*G,)
-            else:
-                # Repeat all input columns (but "prompt" and "completion") to match the number of generations
-                reward_kwargs = {key: [] for key in inputs[0].keys() if key not in ["prompt", "completion"]}
-                for key in reward_kwargs:
-                    for example in inputs:
-                        # Repeat each value in the column for `num_generations` times
-                        reward_kwargs[key].extend([example[key]] * self.num_generations)
-                output_reward_func = reward_func(prompts=prompts, completions=completions, **reward_kwargs)
-                rewards_per_func[:, i] = torch.tensor(output_reward_func, dtype=torch.float32, device=device)
+                    rewards_per_func[:, i_reward] = reward_func(**reward_inputs).logits.squeeze(-1) # ensure (B*G,)
+            else: # Custom reward function
+                # Rebuild reward_kwargs for B*G items from the original B items in `inputs`
+                reward_kwargs_expanded = {key: [] for key in inputs[0].keys() if key not in ["prompt", "completion", "image"]}
+                for key_r in reward_kwargs_expanded:
+                    for example_original_batch_idx in range(len(inputs)): # Iterate B times (original batch)
+                        reward_kwargs_expanded[key_r].extend([inputs[example_original_batch_idx][key_r]] * self.num_generations)
+                
+                output_reward_func = reward_func(prompts=expanded_prompts_for_reward, completions=completions_for_reward, **reward_kwargs_expanded)
+                rewards_per_func[:, i_reward] = torch.tensor(output_reward_func, dtype=torch.float32, device=device)
 
         # Sum the rewards from all reward functions
-        rewards = rewards_per_func.sum(dim=1)
+        rewards = rewards_per_func.sum(dim=1) # Shape (B*G)
 
         # Compute grouped-wise rewards
         mean_grouped_rewards = rewards.view(-1, self.num_generations).mean(dim=1)
@@ -486,6 +718,45 @@ class Qwen2VLGRPOTrainer(Trainer):
         self._metrics["kl"].append(self.accelerator.gather_for_metrics(mean_kl).mean().item())
 
         return loss
+
+
+def placeholder_critic_evaluate(question_text: str, image_input: Any, answer_ans0: str) -> dict:
+    """
+    Placeholder critic function.
+    Inputs:
+        question_text: str (the original textual question)
+        image_input: Any (the image data, not used in this placeholder)
+        answer_ans0: str (the initial answer from the generator)
+    Outputs: A dictionary {"score": float, "critique": str}.
+    """
+    # Convert answer to lowercase for easier checking
+    answer_lower = answer_ans0.lower()
+    
+    # Keywords that might indicate a low-quality answer
+    low_quality_keywords = ["i don't know", "sorry", "cannot answer", "unable to determine", "not sure"]
+    
+    if not answer_ans0.strip(): # Check if the answer is empty or whitespace
+        return {"score": 0.1, "critique": "The answer is empty."}
+        
+    for keyword in low_quality_keywords:
+        if keyword in answer_lower:
+            return {"score": 0.2, "critique": "The answer is not confident or incomplete."}
+            
+    # Example of a simple length check (very basic)
+    if len(answer_ans0.split()) < 3: # If answer is less than 3 words
+        return {"score": 0.4, "critique": "The answer is very short, potentially lacking detail."}
+
+    # If no issues found by the placeholder logic
+    return {"score": 0.9, "critique": "Looks good."}
+
+
+# This will be used to format the prompt for refinement.
+# It needs to align with how the model expects conversational input.
+# We can adapt the SYSTEM_PROMPT_AGENT or a similar structure from grpo_agent_search.py
+REFINEMENT_PROMPT_TEMPLATE = """Original Question: {question_text}
+Initial Answer: {initial_answer}
+Critique: {critique}
+Please provide a refined answer based on the critique. Ensure your output starts with <think> and concludes with <answer> tags."""
 
     def log(self, logs: dict[str, float], start_time: Optional[float] = None) -> None:
         metrics = {key: sum(val) / len(val) for key, val in self._metrics.items()}  # average the metrics
